@@ -1,0 +1,78 @@
+<!--#set var="title" value="The Game" -->
+<!--#include virtual="/parts/header.html" -->
+
+<div class="app">
+	<div class="page container page-with-nav page-rating">
+		<div class="alert alert-warning text-center" role="alert">
+			<a href="winners.html">💥 Список победителей, 15 декабря →</a>
+		</div>
+
+		<div class="tab">
+			<a href="rating-blitz.html" class="tab-button">
+				<p>Блиц</p>
+				<span>(5)</span>
+			</a>
+			<a href="rating.html" class="tab-button tab-button--active">
+				<p>Весь рейтинг</p>
+				<span>(3 512)</span>
+			</a>
+			<a href="rating-favorite.html" class="tab-button">
+				<p>Избранное</p>
+				<span>(3)</span>
+			</a>
+			<a href="rating-search.html" class="tab-button tab-button--search"></a>
+		</div>
+		<!--#set var="pageTitle" value="Полный рейтинг" -->
+		<!--#set var="pageDescription" value="Все участники игры и их места в рейтинге, согласно стоимости активов. Обновляется ежедневно в 5 утра (UTC+5)." -->
+		<!--#include virtual="/parts/appHeader.html" -->
+		<!--#include virtual="/parts/pageHeader.html" -->
+
+		<div class="page-rating-wrapper">
+			<div class="rating">
+
+
+				<div class="table">
+					<div class="table-row">
+						<div class="table-cell table-cell--action header"></div>
+						<div class="table-cell table-cell--num header">#</div>
+						<div class="table-cell table-cell--name header">Имя</div>
+						<div class="table-cell table-cell--city header">Город</div>
+						<div class="table-cell table-cell--balance header justify-content-center"><img
+								src="../images/dist/coin.svg" alt="">
+						</div>
+					</div>
+					<div class="table-row">
+						<div class="table-cell table-cell--action">
+							<button class="button-like"></button>
+						</div>
+						<div class="table-cell table-cell--num">1</div>
+						<div class="table-cell table-cell--name">Дмитрий Казанцев</div>
+						<div class="table-cell table-cell--city">Алматы</div>
+						<div class="table-cell table-cell--balance justify-content-end">$ 10 000 000</div>
+					</div>
+					<div class="table-row">
+						<div class="table-cell table-cell--action">
+							<button class="button-like button-like--active"></button>
+						</div>
+						<div class="table-cell table-cell--num">2</div>
+						<div class="table-cell table-cell--name">Дмитрий Казанцев</div>
+						<div class="table-cell table-cell--city">Нурсултан</div>
+						<div class="table-cell table-cell--balance justify-content-end">$ 9 000 000</div>
+					</div>
+				</div>
+				<div class="app-pagination">
+					<button class="app-pagination-button app-pagination-button--active">1</button>
+					<button class="app-pagination-button">2</button>
+					<button class="app-pagination-button">3</button>
+					<button class="app-pagination-button" disabled>...</button>
+					<button class="app-pagination-button">8</button>
+					<button class="app-pagination-button">9</button>
+					<button class="app-pagination-button">10</button>
+				</div>
+			</div>
+		</div>
+		<!--#include virtual="/parts/appNavigationBar.html" -->
+	</div>
+
+</div>
+<!--#include virtual="/parts/footer.html" -->

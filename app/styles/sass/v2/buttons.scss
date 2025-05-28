@@ -1,0 +1,266 @@
+.v-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 11.5px 16px;
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 400;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+  text-decoration: none;
+
+  &--primary {
+    background-color: $vAccent;
+    border: 1px solid $vAccent;
+    color: white;
+    &:hover {
+      color: white;
+      background-color: darken($vAccent, 10%);
+      border-color: darken($vAccent, 10%);
+    }
+
+    &.v-btn--outline {
+      color: $vAccent;
+    }
+  }
+
+  &--blue-to-purple {
+    background: linear-gradient(180deg, #3399ff 0%, #8e88ff 71.63%);
+    color: white;
+    &:hover {
+      color: white;
+      background-color: darken($vAccent, 10%);
+      border-color: darken($vAccent, 10%);
+    }
+
+    &.v-btn--outline {
+      color: $vAccent;
+    }
+  }
+
+  &--bluegreen {
+    background-color: $vBlueGreen;
+    border: 1px solid $vBlueGreen;
+    color: white;
+    &:hover {
+      color: white;
+      background-color: darken($vBlueGreen, 10%);
+      border-color: darken($vBlueGreen, 10%);
+    }
+
+    &.v-btn--outline {
+      color: $vBlueGreen;
+    }
+  }
+
+  &--jetblue {
+    background-color: rgba(89, 205, 255, 1);
+    border: 1px solid rgba(89, 205, 255, 1);
+    color: white;
+    &:hover {
+      color: white;
+      background-color: darken(rgba(89, 205, 255, 1), 10%);
+      border-color: darken(rgba(89, 205, 255, 1), 10%);
+    }
+
+    &.v-btn--outline {
+      color: rgba(89, 205, 255, 1);
+    }
+  }
+
+  &--orange {
+    background-color: $vOrange;
+    border: 1px solid $vOrange;
+    color: white;
+    &:hover {
+      color: white;
+      background-color: darken($vOrange, 10%);
+      border-color: darken($vOrange, 10%);
+    }
+
+    &.v-btn--outline {
+      color: $vOrange;
+    }
+  }
+
+  &--yellow {
+    background-color: $vYellow;
+    border: 1px solid $vYellow;
+    color: $vText2;
+    &:hover {
+      color: $vText2;
+      background-color: darken($vYellow, 10%);
+      border-color: darken($vYellow, 10%);
+    }
+
+    &.v-btn--outline {
+      color: $vYellow;
+    }
+  }
+
+  &--secondary {
+    background-color: $vGrayBtnBg;
+    border: 1px solid $vGrayBtnBg;
+    color: white;
+    &:hover {
+      color: white;
+      background-color: darken($vGrayBtnBg, 10%);
+      border-color: darken($vGrayBtnBg, 10%);
+    }
+
+    &.v-btn--outline {
+      color: $vGrayBtnBg;
+    }
+  }
+
+  &--danger {
+    background-color: $vRed;
+    color: white;
+    &:hover {
+      background-color: $vRed;
+    }
+
+    &.v-btn--outline {
+      color: $vRed;
+    }
+  }
+
+  &--ataix {
+    background-color: rgba(101, 111, 255, 1);
+    border: 1px solid rgba(101, 111, 255, 1);
+    color: white;
+    &:hover {
+      color: white;
+      background-color: darken(rgba(101, 111, 255, 1), 10%);
+      border-color: darken(rgba(101, 111, 255, 1), 10%);
+    }
+
+    &.v-btn--outline {
+      color: rgba(101, 111, 255, 1);
+    }
+  }
+
+  &--bybit {
+    background-color: rgba(247, 166, 0, 1);
+    border: 1px solid rgba(247, 166, 0, 1);
+    color: white;
+    &:hover {
+      color: white;
+      background-color: darken(rgba(247, 166, 0, 1), 10%);
+      border-color: darken(rgba(247, 166, 0, 1), 10%);
+    }
+
+    &.v-btn--outline {
+      color: rgba(247, 166, 0, 1);
+    }
+  }
+
+  &--red {
+    background-color: $vRed2;
+    border: 1px solid $vRed2;
+    color: white;
+    &:hover {
+      color: white;
+      background-color: darken($vRed2, 10%);
+      border-color: darken($vRed2, 10%);
+    }
+
+    &.v-btn--outline {
+      color: $vRed2;
+    }
+  }
+
+  &--success {
+    background-color: $vGreen;
+    border: 1px solid $vGreen;
+    color: white;
+    &:hover {
+      color: $vText2;
+      background-color: darken($vGreen, 10%);
+      border-color: darken($vGreen, 10%);
+    }
+
+    &.v-btn--outline {
+      color: $vGreen;
+    }
+  }
+
+  &--outline {
+    background: transparent;
+    &:hover {
+      background: transparent;
+    }
+  }
+
+  &--small {
+    padding: 4px 10px;
+    font-size: 12px;
+  }
+
+  &--large {
+    padding: 12px 24px;
+    font-size: 16px;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  &--max {
+    color: $vAccent;
+
+    &:disabled {
+      opacity: 1;
+      color: $gray-5;
+    }
+  }
+}
+
+.v-header-back {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  background: #ffffff;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.24);
+}
+
+.v-btn-subscription {
+  width: 100%;
+  min-height: 49px;
+  background: linear-gradient(180deg, #3399ff 0%, #8e88ff 71.63%);
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.32);
+  border-radius: 8px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+
+  color: #ffffff;
+
+  &:hover {
+    background: linear-gradient(180deg, #3399ff 0%, #8e88ff 71.63%);
+    box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.32);
+    border-radius: 8px;
+  }
+}
+
+.market__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 12px 0;
+}
+.market__button {
+  text-decoration: none;
+  margin: 0 6px;
+}

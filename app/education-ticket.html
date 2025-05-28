@@ -1,0 +1,27 @@
+<!--#set var="title" value="The Game" -->
+<!--#include virtual="/parts/header.html" -->
+
+<div class="app">
+	<div class="page container page-with-nav app-education">
+		<!--#set var="pageTitle" value="Я бы хотел пройти обучение" -->
+		<!--#set var="pageDescription" value="Укажите интересующую вас тему, и мы постараемся порекомендовать вам подходящие материалы" -->
+		<!--#include virtual="/parts/appHeader.html" -->
+		<!--#include virtual="/parts/pageHeader.html" -->
+
+		<div>
+			<form>
+				<div class="form-group">
+					<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+						placeholder="Напишите, чему вы хотели бы научиться"></textarea>
+
+					<div class="button-group">
+						<a href="education-list.html" class="btn btn-light btn-lg mt-4">Назад</a>
+						<button type="submit" class="btn btn-primary btn-lg mt-4">Отправить</button>
+					</div>
+				</div>
+			</form>
+		</div>
+		<!--#include virtual="/parts/appNavigationBar.html" -->
+	</div>
+</div>
+<!--#include virtual="/parts/footer.html" -->

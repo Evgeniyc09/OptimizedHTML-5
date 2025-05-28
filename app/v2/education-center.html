@@ -1,0 +1,97 @@
+<!--#set var="title" value="The Game" -->
+<!--#include virtual="/parts/v2/header.html" -->
+
+<div class="app">
+    <header id="v-header">
+        <div class="container">
+            <a href="" class="v-header-back">
+                <img src="../images/dist/arrow-back.svg" alt="">
+            </a>
+            <div class="v-route-name">
+                Учебный центр <a href="">
+                    <img src="../images/dist/information.png" alt="">
+                </a>
+            </div>
+            <a href="" class="v-profile">
+                <div class="v-profile-wrapper v-profile-wrapper--bronze">
+                    <div class="v-profile-indicator"></div>
+                    <p class="v-profile__label">A</p>
+                </div>
+            </a>
+        </div>
+    </header>
+    <div class="page container page-with-nav v-ec-page">
+
+        <div class="v-ec__page-wrapper">
+            <h2 class="v-ec__page-title">Курсы повышения финансовой грамотности</h2>
+            <p class="v-ec__page-description">На всех уровнях игры доступны 23 курса. Учитесь, проходите тесты и
+                участвуйте
+                в розыгрыше реальных денежных призов
+                каждый день!</p>
+            <div class="v-ec__page-button-wrapper">
+                <a href="" class="v-btn v-btn--primary">Список выигравших</a>
+                <a href="" class="v-btn v-btn--primary v-btn--outline">Добавить курс</a>
+            </div>
+        </div>
+
+        <div class="v-ec__list">
+            <div class="v-ec__item v-ec__item--finished">
+                <div class="v-ec__item-cover">
+                    <img src="../images/dist/courese-icon.png" alt="">
+                </div>
+
+                <div class="v-ec__item-label">Введение в игру</div>
+
+                <a href="" class="v-ec__item-link"></a>
+                <div href="" class="v-ec__item-finished">
+                    Пройдено
+                </div>
+            </div>
+            <div class="v-ec__item v-ec__item--new">
+                <div class="v-ec__item-cover">
+                    <img src="../images/dist/courese-icon.png" alt="">
+                </div>
+
+                <div class="v-ec__item-label">Основы торговли
+                    на бирже</div>
+
+                <a href="" class="v-ec__item-link"></a>
+                <div href="" class="v-ec__item-new">
+                    Новинка
+                </div>
+            </div>
+            <div class="v-ec__item v-ec__item--closed">
+                <div class="v-ec__item-cover">
+                    <img src="../images/dist/courese-icon.png" alt="">
+                </div>
+
+                <div class="v-ec__item-label">Всё о трейдинге</div>
+
+                <a href="" class="v-ec__item-link"></a>
+                <div href="" class="v-ec__item-question">
+                    <img src="../images/dist/question-icon.svg" alt="">
+                </div>
+            </div>
+
+            <div class="v-ec__item">
+                <div class="v-ec__item-cover">
+                    <img src="../images/dist/courese-icon.png" alt="">
+                </div>
+
+                <div class="v-ec__item-label">Ипотека</div>
+
+                <a href="" class="v-ec__item-link"></a>
+            </div>
+        </div>
+        <div id="modal1" class="v-modal__overlay v-deposit__modal" onclick="modalHandler.close(event, 'modal1')">
+            <div class="v-modal" onclick="event.stopPropagation()">
+                <h2 class="v-deposit__modal-title">Доступно на сильвер уровне</h2>
+                <a href="" class="v-btn v-btn--primary v-deposit__modal-btn"
+                    onclick="modalHandler.close(event, 'modal1')">Купить</a>
+            </div>
+        </div>
+        <!--#include virtual="../parts/v2/appNavigationBar.html" -->
+    </div>
+</div>
+
+<!--#include virtual="../parts/v2/footer.html" -->

@@ -1,0 +1,170 @@
+.wp {
+  &__notif {
+    padding: 16px 8px;
+    background: linear-gradient(270deg, #ffc314 0%, #ff9c2d 100%);
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+  }
+
+  &__notif-date {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    margin: 0 0 8px;
+  }
+
+  &__notif-img {
+    margin: 0 0 8px;
+  }
+
+  &__notif-title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    margin: 0 0 8px;
+  }
+
+  &__notif-price {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    margin: 0;
+  }
+
+  &__notif-table {
+    padding: 8px 0px;
+    background: #ffffff;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.24);
+    border-radius: 16px;
+    margin: 16px 0 12px;
+  }
+
+  &__notif-header {
+    padding: 8px 16px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+  }
+
+  &__notif-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 16px;
+    font-size: 12px;
+    line-height: 15px;
+
+    &:nth-child(odd) {
+      background: rgba(247, 247, 247, 1);
+    }
+
+    &--th {
+      color: rgba(115, 115, 115, 1);
+    }
+  }
+
+  &__notif-item {
+    width: 33%;
+  }
+
+  &__pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 16px 0 12px;
+  }
+
+  &__pagination-item {
+    display: block;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    margin: 0 12px;
+    color: #383838;
+
+    &--active {
+      color: rgba(51, 153, 255, 1);
+    }
+
+    &--disabled {
+      pointer-events: none;
+      opacity: 0.5;
+    }
+  }
+
+  &__pay-wrapper {
+    padding: 12px 16px;
+    margin: 38px 0 12px;
+    background: #ffffff;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.24);
+    border-radius: 16px;
+  }
+
+  &__pay-label {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    margin: 0 0 8px;
+    color: #383838;
+  }
+
+  &__pay-value {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    margin: 0;
+  }
+
+  &__btn-wrapper {
+    .v-btn {
+      width: 100%;
+      margin: 0 0 12px;
+
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+
+  &__pay-notif {
+    text-align: center;
+    margin: 8px 0 30px;
+    font-size: 12px;
+    line-height: 15px;
+    color: rgba(115, 115, 115, 1);
+  }
+
+  &__form {
+    padding: 32px 20px;
+    margin: 20px 0 0;
+
+    background: #ffffff;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.24);
+    border-radius: 16px;
+
+    .v-field {
+      width: 100%;
+    }
+  }
+
+  &__form-notif {
+    font-size: 12px;
+    line-height: 15px;
+    color: rgba(115, 115, 115, 1);
+    margin: -12px 0 20px;
+
+    a {
+      text-decoration: none;
+      color: rgba(51, 153, 255, 1);
+    }
+  }
+}
+.v-btn-wp {
+  width: 100%;
+}

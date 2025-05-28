@@ -1,0 +1,52 @@
+.app-investment-info {
+  position: relative;
+  margin: -4px 0 -69px;
+  z-index: 2;
+
+  &-wrapper {
+    justify-content: space-around;
+  }
+
+  &-price {
+    display: flex;
+    color: #222;
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+
+    .value {
+      font-size: 36px;
+      font-weight: bold;
+    }
+    .dynamic-value {
+      background-color: rgba($accent, 0.05);
+      border-radius: 4px;
+      margin: 0 0 0 8px;
+      padding: 0 4px;
+
+      &.increase {
+        color: $green;
+      }
+
+      &.decrease {
+        color: $red;
+      }
+    }
+  }
+
+  &-presence {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #667791;
+
+    &:before {
+      background: url("../images/dist/stack.svg") no-repeat 50% / cover;
+      content: "";
+      display: inline-block;
+      height: 17px;
+      margin: 0 10px 0 0;
+      width: 17px;
+    }
+  }
+}

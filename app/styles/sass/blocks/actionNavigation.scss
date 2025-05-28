@@ -1,0 +1,47 @@
+.action-navigation {
+  padding: 0 0 16px;
+  &-link {
+    display: block;
+    text-decoration: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+  }
+
+  &-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &-item {
+    position: relative;
+    padding: 16px;
+    background-color: white;
+    border-radius: 4px;
+    text-align: center;
+    width: 33.33%;
+    border: 1px solid $gray-1;
+    margin: -1px;
+    transition: all 0.1s;
+
+    &:hover {
+      background: $gray-1;
+    }
+  }
+
+  &-item-name {
+    margin: 0;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  &-item-image {
+    margin: 0 0 8px;
+    img {
+      height: 35px;
+    }
+  }
+}

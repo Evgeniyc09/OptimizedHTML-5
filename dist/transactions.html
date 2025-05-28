@@ -1,0 +1,648 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<base href="/">
+
+	<title>The Game</title>
+	<meta name="description" content="Startup HTML template OptimizedHTML 5">
+
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="icon" href="images/favicon.png">
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<!-- datapicker -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@25.2.1/build/css/intlTelInput.css">
+	<link rel="stylesheet" href="css/app.min.css">
+	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/evgeniyc09/the-game-cdn@v1.0.3/css/app.min.css"> -->
+
+</head>
+
+<body>
+
+<div class="app">
+	<div class="page container page-with-nav page-transactions">
+		
+		
+		<header id="header">
+	<div class="container">
+		<div class="back-to-home">
+			<img class="back-icon" src="./images/dist/arrow.svg" alt="">
+			<a href=""></a>
+		</div>
+		<div class="balance-wrapper">
+
+			<div class="balance">
+				<div class="balance-amount">
+					<span class="balance-value">$100 000</span>
+				</div>
+				<div class="actives">
+					<img class="actives-icon" src="./images/dist/arrow-up.svg" alt="">
+					<span class="actives-value up">+15%</span>
+				</div>
+			</div>
+			<div class="balance-info">
+				<span>Свободных средств: $ 12 000</span>
+				<!-- <span>Свободных средств $0. Всё вложено</span> -->
+			</div>
+
+		</div>
+		<div class="avatar has-notice">
+			<a href="profile.html">AP</a>
+		</div>
+	</div>
+</header>
+		<section id="page-header" class="page-header">
+	<div class="container">
+		<h2 class="page-header-title">История сделок <br> и транзакций</h2>
+		<p class="page-header-description"> </p>
+	</div>
+</section>
+		<section id="app-investment-statistic" class="app-investment-statistic">
+			<div class="app-investment-statistic-wrapper">
+				<div class="app-investment-statistic-item">
+					<div class="app-investment-statistic-content">
+						<span>Всего операций</span>
+						<p>35</p>
+					</div>
+				</div>
+				<div class="app-investment-statistic-item">
+					<div class="app-investment-statistic-content">
+						<span>Динамика</span>
+						<p class="green">+ $ 2765</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="tab">
+			<a href="transactions.html" class="tab-button tab-button--active">
+				<p>С разбивкой по активам</p>
+			</a>
+			<a href="transaction-details.html" class="tab-button">
+				<p>Все операции подряд</p>
+			</a>
+		</div>
+		<div class="transaction-list">
+			<div class="transaction-item">
+				<div class="transaction-item-row">
+					<div class="transaction-stats">
+						<div class="transaction-brand">
+							<img class="app-investment-item-image" src="./images/dist/stocks/apple.svg" alt="">
+							<p class="transaction-name">APPLE</p>
+							<p class="transaction-stock">7 шт.</p>
+						</div>
+						<div class="transaction-row">
+							<span class="transaction-row_label">Куплено:</span> 10 шт. по $ 1 300
+						</div>
+						<div class="transaction-row">
+							<span class="transaction-row_label">Продано:</span> 3 шт. по $ 1 300
+						</div>
+						<div class="transaction-row">
+							<span class="transaction-row_label">Текущая цена:</span> 7 шт. по $ 1 700 <span
+								class="color-red">+400$</span>
+						</div>
+					</div>
+					<div class="transaction-actions">
+						<a href="" class="btn btn-success btn-xs">Перейти</a>
+						<button class="btn btn-details btn-xs">
+							<span style="display: inline;">Развернуть</span>
+							<span style="display: none;">Скрыть</span>
+						</button>
+					</div>
+				</div>
+				<div class="transaction-item-row transaction-item-details">
+					<div class="details-list">
+						<div class="details-item">
+							<div class="details-row">
+								<div class="details-col details-col--status color-green">
+									Продано
+								</div>
+								<div class="details-col details-col--date">
+									17.12.24, 22:02
+								</div>
+							</div>
+							<div class="details-col details-col--info">
+								3 шт. по $1 310 = $ 2 620
+							</div>
+						</div>
+						<div class="details-item">
+							<div class="details-row">
+								<div class="details-col details-col--status color-red">
+									Продано
+								</div>
+								<div class="details-col details-col--date">
+									17.12.24, 22:02
+								</div>
+							</div>
+							<div class="details-col details-col--info">
+								3 шт. по $1 310 = $ 2 620
+							</div>
+						</div>
+						<div class="details-item">
+							<div class="details-row">
+								<div class="details-col details-col--status color-green">
+									Продано
+								</div>
+								<div class="details-col details-col--date">
+									17.12.24, 22:02
+								</div>
+							</div>
+							<div class="details-col details-col--info">
+								3 шт. по $1 310 = $ 2 620
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="transaction-item">
+				<div class="transaction-item-row">
+					<div class="transaction-stats">
+						<div class="transaction-brand">
+							<img class="app-investment-item-image" src="./images/dist/coin.svg" alt="">
+							<p class="transaction-name">EUR</p>
+							<p class="transaction-stock">€ 5 000</p>
+						</div>
+						<div class="transaction-row">
+							<span class="transaction-row_label">Куплено:</span> € 5 000 по $ 1,1
+						</div>
+						<div class="transaction-row">
+							<span class="transaction-row_label">Текущая цена:</span> € 5 000 по $ 1,2 <span
+								class="color-green">$ +1 000</span>
+						</div>
+					</div>
+					<div class="transaction-actions">
+						<a href="" class="btn btn-success btn-xs">Перейти</a>
+						<button class="btn btn-details btn-xs">
+							<span style="display: inline;">Развернуть</span>
+							<span style="display: none;">Скрыть</span>
+						</button>
+					</div>
+				</div>
+				<div class="transaction-item-row transaction-item-details">
+					<div class="details-list">
+						<div class="details-item">
+							<div class="details-row">
+								<div class="details-col details-col--status color-green">
+									Продано
+								</div>
+								<div class="details-col details-col--date">
+									17.12.24, 22:02
+								</div>
+							</div>
+							<div class="details-col details-col--info">
+								3 шт. по $1 310 = $ 2 620
+							</div>
+						</div>
+						<div class="details-item">
+							<div class="details-row">
+								<div class="details-col details-col--status color-red">
+									Продано
+								</div>
+								<div class="details-col details-col--date">
+									17.12.24, 22:02
+								</div>
+							</div>
+							<div class="details-col details-col--info">
+								3 шт. по $1 310 = $ 2 620
+							</div>
+						</div>
+						<div class="details-item">
+							<div class="details-row">
+								<div class="details-col details-col--status color-green">
+									Продано
+								</div>
+								<div class="details-col details-col--date">
+									17.12.24, 22:02
+								</div>
+							</div>
+							<div class="details-col details-col--info">
+								3 шт. по $1 310 = $ 2 620
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="transaction-item">
+				<div class="transaction-item-row">
+					<div class="transaction-stats">
+						<div class="transaction-brand">
+							<img class="app-investment-item-image" src="./images/dist/metal.svg" alt="">
+							<p class="transaction-name">Платина</p>
+							<p class="transaction-stock">10 гр.</p>
+						</div>
+						<div class="transaction-row">
+							<span class="transaction-row_label">Куплено:</span> 10 гр. по $ 850
+						</div>
+						<div class="transaction-row">
+							<span class="transaction-row_label">Текущая цена:</span> 10 гр. по $ 800 <span
+								class="color-green">$ + 400</span>
+						</div>
+					</div>
+					<div class="transaction-actions">
+						<a href="" class="btn btn-success btn-xs">Перейти</a>
+						<button class="btn btn-details btn-xs">
+							<span style="display: inline;">Развернуть</span>
+							<span style="display: none;">Скрыть</span>
+						</button>
+					</div>
+				</div>
+				<div class="transaction-item-row transaction-item-details">
+					<div class="details-list">
+						<div class="details-item">
+							<div class="details-row">
+								<div class="details-col details-col--status color-green">
+									Продано
+								</div>
+								<div class="details-col details-col--date">
+									17.12.24, 22:02
+								</div>
+							</div>
+							<div class="details-col details-col--info">
+								3 шт. по $1 310 = $ 2 620
+							</div>
+						</div>
+						<div class="details-item">
+							<div class="details-row">
+								<div class="details-col details-col--status color-red">
+									Продано
+								</div>
+								<div class="details-col details-col--date">
+									17.12.24, 22:02
+								</div>
+							</div>
+							<div class="details-col details-col--info">
+								3 шт. по $1 310 = $ 2 620
+							</div>
+						</div>
+						<div class="details-item">
+							<div class="details-row">
+								<div class="details-col details-col--status color-green">
+									Продано
+								</div>
+								<div class="details-col details-col--date">
+									17.12.24, 22:02
+								</div>
+							</div>
+							<div class="details-col details-col--info">
+								3 шт. по $1 310 = $ 2 620
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="transaction-item">
+				<div class="transaction-item-row">
+					<div class="transaction-stats">
+						<div class="transaction-brand">
+							<img class="app-investment-item-image" src="./images/dist/deposit.svg" alt="">
+							<p class="transaction-name">Депозит</p>
+							<p class="transaction-stock">14% годовых</p>
+						</div>
+						<div class="transaction-row">
+							<span class="transaction-row_label">Куплено:</span> Куплено: $ 100
+						</div>
+						<div class="transaction-row">
+							<span class="transaction-row_label">Снято:</span> Куплено: $ 5
+						</div>
+						<div class="transaction-row">
+							<span class="transaction-row_label">На депозите:</span> $ 110 $ +15
+						</div>
+					</div>
+					<div class="transaction-actions">
+						<a href="" class="btn btn-success btn-xs">Перейти</a>
+						<button class="btn btn-details btn-xs">
+							<span style="display: inline;">Развернуть</span>
+							<span style="display: none;">Скрыть</span>
+						</button>
+					</div>
+				</div>
+				<div class="transaction-item-row transaction-item-details">
+					<div class="details-list">
+						<div class="details-item">
+							<div class="details-row">
+								<div class="details-col details-col--status color-green">
+									Продано
+								</div>
+								<div class="details-col details-col--date">
+									17.12.24, 22:02
+								</div>
+							</div>
+							<div class="details-col details-col--info">
+								3 шт. по $1 310 = $ 2 620
+							</div>
+						</div>
+						<div class="details-item">
+							<div class="details-row">
+								<div class="details-col details-col--status color-red">
+									Продано
+								</div>
+								<div class="details-col details-col--date">
+									17.12.24, 22:02
+								</div>
+							</div>
+							<div class="details-col details-col--info">
+								3 шт. по $1 310 = $ 2 620
+							</div>
+						</div>
+						<div class="details-item">
+							<div class="details-row">
+								<div class="details-col details-col--status color-green">
+									Продано
+								</div>
+								<div class="details-col details-col--date">
+									17.12.24, 22:02
+								</div>
+							</div>
+							<div class="details-col details-col--info">
+								3 шт. по $1 310 = $ 2 620
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="transaction-item">
+				<div class="transaction-item-row">
+					<div class="transaction-stats">
+						<div class="transaction-brand">
+							<img class="app-investment-item-image" src="./images/dist/estate.svg" alt="">
+							<p class="transaction-name">Недвижимость</p>
+							<p class="transaction-stock">1-комн. кв.</p>
+						</div>
+						<div class="transaction-row">
+							<span class="transaction-row_label">Куплено:</span> $ 50 000
+						</div>
+						<div class="transaction-row">
+							<span class="transaction-row_label">Текущая цена:</span> $ 55 000
+						</div>
+						<div class="transaction-row">
+							<span class="transaction-row_label">Аренда:</span> <span class="color-green">$ +500</span>
+						</div>
+					</div>
+					<div class="transaction-actions">
+						<a href="" class="btn btn-success btn-xs">Перейти</a>
+						<button class="btn btn-details btn-xs">
+							<span style="display: inline;">Развернуть</span>
+							<span style="display: none;">Скрыть</span>
+						</button>
+					</div>
+				</div>
+				<div class="transaction-item-row transaction-item-details">
+					<div class="details-list">
+						<div class="details-item">
+							<div class="details-row">
+								<div class="details-col details-col--status color-green">
+									Продано
+								</div>
+								<div class="details-col details-col--date">
+									17.12.24, 22:02
+								</div>
+							</div>
+							<div class="details-col details-col--info">
+								3 шт. по $1 310 = $ 2 620
+							</div>
+						</div>
+						<div class="details-item">
+							<div class="details-row">
+								<div class="details-col details-col--status color-red">
+									Продано
+								</div>
+								<div class="details-col details-col--date">
+									17.12.24, 22:02
+								</div>
+							</div>
+							<div class="details-col details-col--info">
+								3 шт. по $1 310 = $ 2 620
+							</div>
+						</div>
+						<div class="details-item">
+							<div class="details-row">
+								<div class="details-col details-col--status color-green">
+									Продано
+								</div>
+								<div class="details-col details-col--date">
+									17.12.24, 22:02
+								</div>
+							</div>
+							<div class="details-col details-col--info">
+								3 шт. по $1 310 = $ 2 620
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="transaction-item">
+				<div class="transaction-item-row">
+					<div class="transaction-stats">
+						<div class="transaction-brand">
+							<img class="app-investment-item-image" src="./images/dist/education.svg" alt="">
+							<p class="transaction-name">Курсы</p>
+						</div>
+						<div class="transaction-row">
+							<span class="transaction-row_label">Пройдено:</span> 2 шт.
+						</div>
+						<div class="transaction-row">
+							<span class="transaction-row_label">Начислено:</span> $ 500
+						</div>
+					</div>
+					<div class="transaction-actions">
+						<a href="" class="btn btn-success btn-xs">Перейти</a>
+						<button class="btn btn-details btn-xs">
+							<span style="display: inline;">Развернуть</span>
+							<span style="display: none;">Скрыть</span>
+						</button>
+					</div>
+				</div>
+				<div class="transaction-item-row transaction-item-details">
+					<div class="details-list">
+						<div class="details-item">
+							<div class="details-row">
+								<div class="details-col details-col--status color-green">
+									Продано
+								</div>
+								<div class="details-col details-col--date">
+									17.12.24, 22:02
+								</div>
+							</div>
+							<div class="details-col details-col--info">
+								3 шт. по $1 310 = $ 2 620
+							</div>
+						</div>
+						<div class="details-item">
+							<div class="details-row">
+								<div class="details-col details-col--status color-red">
+									Продано
+								</div>
+								<div class="details-col details-col--date">
+									17.12.24, 22:02
+								</div>
+							</div>
+							<div class="details-col details-col--info">
+								3 шт. по $1 310 = $ 2 620
+							</div>
+						</div>
+						<div class="details-item">
+							<div class="details-row">
+								<div class="details-col details-col--status color-green">
+									Продано
+								</div>
+								<div class="details-col details-col--date">
+									17.12.24, 22:02
+								</div>
+							</div>
+							<div class="details-col details-col--info">
+								3 шт. по $1 310 = $ 2 620
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="transaction-item">
+				<div class="transaction-item-row">
+					<div class="transaction-stats">
+						<div class="transaction-brand">
+							<img class="app-investment-item-image" src="./images/dist/icon-case.svg" alt="">
+							<p class="transaction-name">Кейсы</p>
+							<p class="transaction-stock">9 шт.</p>
+						</div>
+						<div class="transaction-row">
+							<span class="transaction-row_label">Заработано:</span> $ 5 000
+						</div>
+						<div class="transaction-row">
+							<span class="transaction-row_label">Потеряно:</span> $ 3 000
+						</div>
+					</div>
+					<div class="transaction-actions">
+						<a href="" class="btn btn-success btn-xs">Перейти</a>
+						<button class="btn btn-details btn-xs">
+							<span style="display: inline;">Развернуть</span>
+							<span style="display: none;">Скрыть</span>
+						</button>
+					</div>
+				</div>
+				<div class="transaction-item-row transaction-item-details">
+					<div class="details-list">
+						<div class="details-item">
+							<div class="details-row">
+								<div class="details-col details-col--status color-green">
+									Продано
+								</div>
+								<div class="details-col details-col--date">
+									17.12.24, 22:02
+								</div>
+							</div>
+							<div class="details-col details-col--info">
+								3 шт. по $1 310 = $ 2 620
+							</div>
+						</div>
+						<div class="details-item">
+							<div class="details-row">
+								<div class="details-col details-col--status color-red">
+									Продано
+								</div>
+								<div class="details-col details-col--date">
+									17.12.24, 22:02
+								</div>
+							</div>
+							<div class="details-col details-col--info">
+								3 шт. по $1 310 = $ 2 620
+							</div>
+						</div>
+						<div class="details-item">
+							<div class="details-row">
+								<div class="details-col details-col--status color-green">
+									Продано
+								</div>
+								<div class="details-col details-col--date">
+									17.12.24, 22:02
+								</div>
+							</div>
+							<div class="details-col details-col--info">
+								3 шт. по $1 310 = $ 2 620
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="transaction-item">
+				<div class="transaction-item-row">
+					<div class="transaction-stats">
+						<div class="transaction-row">
+							😐 Вас, как лидера, попросили поделиться суммой <span class="color-green">100$</span>
+						</div>
+						<div class="transaction-row mt-2">
+							☺️ Вы помогли аутсайдерам на сумму <span class="color-green">100$</span>
+						</div>
+					</div>
+					<div class="transaction-actions">
+						<a href="/rating.html" class="btn btn-success btn-xs">Рейтинг</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="app-navigation" class="app-navigation">
+	<div class="app-navigation-wrapper">
+		<div class="app-navigation-item">
+			<div class="app-navigation-item-icon app-navigation-item-icon--news"></div>
+			<div class="app-navigation-item-text">
+				Новости
+			</div>
+			<a href="news-list.html" class="app-navigation-item-link"></a>
+		</div>
+		<div class="app-navigation-item has-notice">
+			<div class="app-navigation-item-icon app-navigation-item-icon--case"></div>
+			<div class="app-navigation-item-text">
+				Кейсы
+			</div>
+			<a href="case-list.html" class="app-navigation-item-link"></a>
+		</div>
+		<div class="app-navigation-item">
+			<div class="app-navigation-item-icon app-navigation-item-icon--home"></div>
+			<div class="app-navigation-item-text">
+				Главная
+			</div>
+			<a href="index.html" class="app-navigation-item-link"></a>
+		</div>
+		<div class="app-navigation-item active">
+			<div class="app-navigation-item-icon app-navigation-item-icon--rating"></div>
+			<div class="app-navigation-item-text">
+				Рейтинг
+			</div>
+			<a href="rating.html" class="app-navigation-item-link"></a>
+		</div>
+		<div class="app-navigation-item">
+			<div class="app-navigation-item-icon app-navigation-item-icon--education"></div>
+			<div class="app-navigation-item-text">
+				Обучение
+			</div>
+			<a href="education-list.html" class="app-navigation-item-link"></a>
+		</div>
+	</div>
+</div>
+	</div>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+	integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+	crossorigin="anonymous"></script>
+<!-- Datepicker -->
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script src="https://npmcdn.com/flatpickr/dist/l10n/ru.js"></script>
+<script src="https://unpkg.com/imask"></script>
+<script src="js/app.min.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/gh/evgeniyc09/the-game-cdn@v1.0.3/js/app.min.js"></script> -->
+
+</body>
+
+</html>

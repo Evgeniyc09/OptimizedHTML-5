@@ -1,0 +1,355 @@
+<!--#set var="title" value="OptimizedHTML 5" -->
+<!--#include virtual="/parts/header.html" -->
+
+<div class="app">
+
+	<div class="registration page container">
+		<div class="registration-header">
+			<div class="switch">
+				<input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox">
+				<label for="language-toggle"></label>
+				<span class="on">RU</span>
+				<span class="off">KK</span>
+			</div>
+			<a href="" class="btn btn-light">
+				<svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-x"
+					viewBox="0 0 16 16">
+					<path
+						d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+				</svg>
+			</a>
+		</div>
+		<div class="registration-logo">
+			<img src="../images/dist/logo.svg" alt="">
+		</div>
+		<!--#set var="pageTitle" value="Регистрация" -->
+		<!--#set var="pageDescription" value="В игре могут участвовать все, кому исполнилось 18 лет" -->
+		<!--#include virtual="/parts/pageHeader.html" -->
+
+		<form id="registerForm">
+			<div class="mb-3">
+				<input id="id_first_name" type="text" class="form-control form-control-lg is-valid"
+					placeholder="Ваше имя" id="name">
+			</div>
+			<div class="mb-3">
+				<input id="id_birthday_year" type="number" maxlength="4" class="form-control form-control-lg"
+					id="birthday" placeholder="Год рождения">
+				<div id="id-feedback" class="d-none invalid-feedback">
+					В игре могут участвовать все, кому исполнилось 18 лет
+				</div>
+				<i class="bi bi-x"></i>
+			</div>
+			<div class="mb-3">
+				<input id="id_phone" type="tel" class="form-control form-control-lg phone-input"
+					placeholder="Введите номер телефона">
+				<div id="id-feedback" class="d-none invalid-feedback">
+					В игре могут участвовать все, кому исполнилось 18 лет
+				</div>
+				<i class="bi bi-x"></i>
+			</div>
+			<div class="mb-3">
+				<input class="form-control form-control-lg" list="datalistOptions" id="city"
+					placeholder="Город, где вы живёте">
+				<datalist id="datalistOptions">
+					<option value="Алматы">
+					<option value="Астана">
+					<option value="Шымкент">
+					<option value="Актау">
+					<option value="Караганда">
+				</datalist>
+			</div>
+			<button type="submit" class="btn mt-2 btn-primary w-100 btn-rounded btn-lg">Играть!</button>
+			<div class="policy">
+				Нажимая на кнопку, вы соглашаетесь <br> с <a href="#rules">условиями игры</a> и <a
+					href="#rules">политикой
+					конфиденциальности</a>
+			</div>
+
+
+			<div class="accordion" id="accordionExample">
+				<div class="accordion-item" id="rules">
+					<h2 class="accordion-header" id="headingTwo">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+							data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+							Условия использования
+						</button>
+					</h2>
+					<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+						data-bs-parent="#accordionExample">
+						<div class="accordion-body">
+							<p>Мы предлагаем множество сервисов, которые помогают миллионам людей ежедневно узнавать
+								что-то новое,
+								решать различные
+								задачи и просто общаться друг с другом. Вот лишь несколько примеров наших продуктов:</p>
+							<ul>
+								<li>приложения, сайты и устройства, такие как Google Поиск, YouTube и Google Home;</li>
+								<li>платформы, такие как браузер Chrome и операционная система Android;</li>
+								<li>решения, которые можно встраивать в приложения от других разработчиков и на
+									сторонние сайты,
+									например рекламные
+									сервисы, сервисы аналитики, встроенные Google Карты.</li>
+							</ul>
+							<p>Чтобы управлять собственной конфиденциальностью, Вы можете использовать наши сервисы
+								разными способами.
+								Если Вы
+								хотите размещать контент и управлять им, например переписываться в Gmail и хранить
+								фотографии в Google
+								Фото, а также
+								получать более актуальные результаты в Google Поиске, Вы можете создать аккаунт Google.
+								В то же время
+								многими
+								сервисами можно пользоваться, не входя в аккаунт и даже не создавая его, например искать
+								в Google и
+								смотреть видео
+								на YouTube. Кроме того, Вы можете посещать веб-страницы в <a
+									href="https://support.google.com/chrome/answer/9845881?hl=ru" class="N6CPUe"
+									target="_blank">режиме
+									инкогнито
+									Google Chrome</a>, в котором сведения о Ваших действиях в интернете недоступны
+								другим пользователям
+								устройства.
+								Во всех наших сервисах Вы сами указываете, можем ли мы собирать некоторые типы
+								информации о Вас и как ее
+								можно
+								использовать.</p>
+							<p>Чтобы наши правила были как можно более понятными, мы добавили в них примеры, видеоролики
+								и определения
+								<a href="privacy/key-terms?hl=ru#key-terms">основных терминов</a>. Если у Вас появятся
+								вопросы в
+								отношении Политики
+								конфиденциальности Google, <a
+									href="https://support.google.com/policies?p=privpol_privts&amp;hl=ru" class="N6CPUe"
+									target="_blank">свяжитесь с нами</a>.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="accordion-item" id="policy">
+					<h2 class="accordion-header" id="headingOne">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+							data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+							Политика конфиденциальности
+						</button>
+					</h2>
+					<div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+						data-bs-parent="#accordionExample">
+						<div class="accordion-body">
+							<p>Мы предлагаем множество сервисов, которые помогают миллионам людей ежедневно узнавать
+								что-то новое,
+								решать различные
+								задачи и просто общаться друг с другом. Вот лишь несколько примеров наших продуктов:</p>
+							<ul>
+								<li>приложения, сайты и устройства, такие как Google Поиск, YouTube и Google Home;</li>
+								<li>платформы, такие как браузер Chrome и операционная система Android;</li>
+								<li>решения, которые можно встраивать в приложения от других разработчиков и на
+									сторонние сайты,
+									например рекламные
+									сервисы, сервисы аналитики, встроенные Google Карты.</li>
+							</ul>
+							<p>Чтобы управлять собственной конфиденциальностью, Вы можете использовать наши сервисы
+								разными способами.
+								Если Вы
+								хотите размещать контент и управлять им, например переписываться в Gmail и хранить
+								фотографии в Google
+								Фото, а также
+								получать более актуальные результаты в Google Поиске, Вы можете создать аккаунт Google.
+								В то же время
+								многими
+								сервисами можно пользоваться, не входя в аккаунт и даже не создавая его, например искать
+								в Google и
+								смотреть видео
+								на YouTube. Кроме того, Вы можете посещать веб-страницы в <a
+									href="https://support.google.com/chrome/answer/9845881?hl=ru" class="N6CPUe"
+									target="_blank">режиме
+									инкогнито
+									Google Chrome</a>, в котором сведения о Ваших действиях в интернете недоступны
+								другим пользователям
+								устройства.
+								Во всех наших сервисах Вы сами указываете, можем ли мы собирать некоторые типы
+								информации о Вас и как ее
+								можно
+								использовать.</p>
+							<p>Чтобы наши правила были как можно более понятными, мы добавили в них примеры, видеоролики
+								и определения
+								<a href="privacy/key-terms?hl=ru#key-terms">основных терминов</a>. Если у Вас появятся
+								вопросы в
+								отношении Политики
+								конфиденциальности Google, <a
+									href="https://support.google.com/policies?p=privpol_privts&amp;hl=ru" class="N6CPUe"
+									target="_blank">свяжитесь с нами</a>.
+							</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</form>
+	</div>
+</div>
+<script>
+	let iti
+	document.addEventListener('DOMContentLoaded', () => {
+		const form = document.getElementById('registerForm');
+		const firstNameInput = document.getElementById('id_first_name');
+		const birthdayYearInput = document.getElementById('id_birthday_year');
+		const birthdayFeedbackElement = document.getElementById('id-feedback');
+		const currentYear = new Date().getFullYear();
+
+		function validateFirstNameInput() {
+			if (firstNameInput.value) {
+				firstNameInput.classList.remove('is-invalid');
+				firstNameInput.classList.add('is-valid');
+			} else {
+				firstNameInput.classList.remove('is-valid');
+				firstNameInput.classList.add('is-invalid');
+			}
+		}
+
+		function validateBirthdayYearInput() {
+			// Year value
+			const year = birthdayYearInput.value.trim();
+
+			if (year.length === 0) {
+				birthdayYearInput.classList.remove('is-valid');
+				birthdayFeedbackElement.classList.add('d-none');
+				return;
+			}
+
+			if (year.length === 1 && year !== '1' && year !== '2') {
+				birthdayYearInput.value = '';
+				birthdayYearInput.classList.remove('is-valid');
+				birthdayYearInput.classList.add('is-invalid');
+				birthdayFeedbackElement.textContent = 'Год должен начинаться с 1 или 2.';
+				birthdayFeedbackElement.classList.remove('d-none');
+				birthdayFeedbackElement.classList.add('d-block');
+				return;
+			}
+
+			if (year.length === 2) {
+				if (year[0] === '1' && year[1] !== '9') {
+					birthdayYearInput.value = year[0];
+					birthdayYearInput.classList.remove('is-valid');
+					birthdayYearInput.classList.add('is-invalid');
+					birthdayFeedbackElement.textContent = 'Если первая цифра 1, то вторая должна быть 9.';
+					birthdayFeedbackElement.classList.remove('d-none');
+					birthdayFeedbackElement.classList.add('d-block');
+					return;
+				}
+
+				if (year[0] === '2' && year[1] !== '0' && year[1] !== '1') {
+					birthdayYearInput.value = year[0];
+					birthdayYearInput.classList.remove('is-valid');
+					birthdayYearInput.classList.add('is-invalid');
+					birthdayFeedbackElement.textContent = 'Если первая цифра 2, то вторая должна быть 0 или 1.';
+					birthdayFeedbackElement.classList.remove('d-none');
+					birthdayFeedbackElement.classList.add('d-block');
+					return;
+				}
+			}
+
+			// Проверка возраста
+			const age = currentYear - parseInt(year, 10);
+			if (age < 18) {
+				birthdayYearInput.classList.remove('is-valid');
+				birthdayYearInput.classList.add('is-invalid');
+				birthdayFeedbackElement.textContent = 'Возраст должен быть не менее 18 лет.';
+				birthdayFeedbackElement.classList.remove('d-none');
+				birthdayFeedbackElement.classList.add('d-block');
+				return;
+			}
+
+			birthdayYearInput.classList.remove('is-invalid');
+			birthdayYearInput.classList.add('is-valid');
+			birthdayFeedbackElement.classList.add('d-none');
+		}
+
+		firstNameInput.addEventListener('input', validateFirstNameInput)
+		birthdayYearInput.addEventListener('input', () => {
+			if (birthdayYearInput.value.length > 4) {
+				birthdayYearInput.value = birthdayYearInput.value.slice(0, 4);
+			} else if (1 < birthdayYearInput.value.length <= 4) {
+				validateBirthdayYearInput();
+			} else {
+				birthdayYearInput.classList.remove('is-valid', 'is-invalid');
+				birthdayFeedbackElement.classList.add('d-none');
+			}
+		});
+	});
+	const form = document.getElementById('registerForm');
+	const birthdayYearInput = document.getElementById('id_birthday_year');
+	const feedbackElement = document.getElementById('id-feedback');
+
+	// Валидация года рождения
+	function validateBirthdayYear() {
+		const birthdayYear = birthdayYearInput.value.trim();
+		const currentYear = new Date().getFullYear();
+
+		// Проверка на длину
+		if (birthdayYear.length !== 4) {
+			setInvalid();
+			return;
+		}
+
+		// Проверка на первую цифру
+		if (birthdayYear[0] !== '1' && birthdayYear[0] !== '2') {
+			setInvalid();
+			return;
+		}
+
+		// Проверка на вторую цифру
+		if (birthdayYear[0] === '1' && birthdayYear[1] !== '9') {
+			setInvalid();
+			return;
+		}
+
+		if (birthdayYear[0] === '2' && birthdayYear[1] !== '0' && birthdayYear[1] !== '1') {
+			setInvalid();
+			return;
+		}
+
+		// Проверка на возраст
+		const age = currentYear - parseInt(birthdayYear, 10);
+		if (age < 18) {
+			setInvalid();
+			return;
+		}
+
+		// Если все проверки пройдены
+		setValid();
+	}
+
+	function setInvalid() {
+		birthdayYearInput.classList.remove('is-valid');
+		birthdayYearInput.classList.add('is-invalid');
+		feedbackElement.classList.remove('d-none');
+		feedbackElement.classList.add('d-block');
+	}
+
+	function setValid() {
+		birthdayYearInput.classList.remove('is-invalid');
+		birthdayYearInput.classList.add('is-valid');
+		feedbackElement.classList.remove('d-block');
+		feedbackElement.classList.add('d-none');
+	}
+
+	// Обработка события ввода
+	birthdayYearInput.addEventListener('input', () => {
+		if (birthdayYearInput.value.trim().length === 4) {
+			validateBirthdayYear();
+		} else {
+			// Пока длина не равна 4, сбрасываем состояние
+			birthdayYearInput.classList.remove('is-valid');
+			birthdayYearInput.classList.add('is-invalid');
+			feedbackElement.classList.remove('d-none');
+			feedbackElement.classList.add('d-block');
+		}
+	});
+
+	// Проверка формы перед отправкой
+	form.addEventListener('submit', (event) => {
+		event.preventDefault();
+		validateBirthdayYear();
+	});
+</script>
+<!--#include virtual="/parts/footer.html" -->

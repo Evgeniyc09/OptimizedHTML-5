@@ -1,0 +1,88 @@
+.v-icon-instagram {
+  background: url(../images/dist/instagram-logo.svg) no-repeat 50% / cover;
+  display: inline-block;
+  height: 15px;
+  margin: 0 4px 0 8px;
+  vertical-align: middle;
+  width: 15px;
+}
+
+.icon-metrika {
+  background: url(../images/dist/metrika.svg) no-repeat 50% / cover;
+  display: inline-block;
+  height: 15px;
+  margin: 0 4px 0 8px;
+  vertical-align: middle;
+  width: 15px;
+}
+
+.icon-telegram {
+  background: url(../images/dist/telegram-icon.svg) no-repeat 50% / cover;
+  display: inline-block;
+  height: 15px;
+  margin: 0 4px 0 8px;
+  vertical-align: middle;
+  width: 15px;
+}
+
+.v-footer-link--instagram a,
+.v-footer-link--metrika a,
+.v-footer-link--telegram a {
+  color: #222;
+  font-size: 10px;
+  line-height: 15px;
+  text-decoration: none;
+}
+
+.v-footer {
+  font-size: 14px;
+  margin: 40px 0;
+}
+
+.v-footer-group-link {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 16px 0 10px;
+  justify-content: center;
+}
+.v-footer-link {
+  margin: 0 8px;
+}
+.v-footer-copyright {
+  margin: 0 0 12px;
+
+  p {
+    margin: 0;
+  }
+}
+
+.v-footer-name {
+  margin: 0;
+  font-size: 10px;
+  color: rgba(83, 88, 98, 1);
+  font-size: 10px;
+  line-height: 15px;
+  color: $vTextGray;
+}
+.v-powered-by-apps {
+  text-align: center;
+}
+.v-powered-by-apps a {
+  color: $vTextGray;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.v-powered-by-apps-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.v-powered-by-apps-container p {
+  margin: 0 10px;
+  font-size: 10px;
+  color: $vTextGray;
+}
+.v-powered-by-apps .v-apps-logo {
+  width: 53px;
+}

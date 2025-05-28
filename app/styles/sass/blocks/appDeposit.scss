@@ -1,0 +1,110 @@
+.app-deposit {
+  &-image {
+    text-align: center;
+    margin: 25px 0;
+
+    img {
+      width: 170px;
+    }
+  }
+
+  &-balance {
+    max-width: 306px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    span {
+      display: block;
+      font-size: 18px;
+      color: $textsecondary;
+      margin: 0 0 -10px;
+    }
+
+    .value {
+      position: relative;
+      display: flex;
+      align-items: center;
+      font-size: 36px;
+      color: $textcolor;
+      font-weight: bold;
+      margin: 0 auto;
+
+      &:after {
+        position: absolute;
+        content: "";
+        display: block;
+        right: -32px;
+        bottom: 16px;
+        height: 19px;
+        margin: 9px 0 0 8px;
+        width: 25px;
+        background: url("../images/dist/coin.svg") no-repeat center/cover;
+      }
+    }
+  }
+
+  &-info {
+    max-width: 350px;
+    width: 100%;
+    border-radius: 4px;
+    margin: 32px auto 35px;
+    padding: 8px 16px;
+    background: $gray;
+
+    &-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px;
+      border-radius: 4px;
+
+      p {
+        font-size: 18px;
+        font-weight: bold;
+        margin: 0;
+
+        &.green {
+          color: $green;
+        }
+      }
+
+      span {
+        font-size: 16px;
+        line-height: 16px;
+        display: block;
+      }
+    }
+  }
+
+  &-changes {
+    text-align: center;
+    font-weight: bold;
+
+    &.green {
+      color: $green;
+    }
+    &.red {
+      color: $red;
+    }
+  }
+}
+.form-field {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0 25px;
+}
+.btn-max {
+  border-radius: 0 4px 4px 0;
+}
+
+#count-field {
+  max-width: 250px;
+  text-align: center;
+  margin: 0;
+  width: 100%;
+  border-radius: 4px 0 0 4px;
+}

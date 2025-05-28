@@ -1,0 +1,52 @@
+<!--#set var="title" value="The Game" -->
+<!--#include virtual="/parts/header.html" -->
+
+<div class="app">
+	<div
+		class="page container page-with-nav page-with-action-button page-investment-action page-investment-action--buy">
+		<!--#include virtual="/parts/appHeader.html" -->
+		<div class="app-investment-wrapper">
+			<div class="app-investment-item no-link">
+				<div class="app-investment-item-invest">
+					<div class="app-investment-item-group">
+						<img class="app-investment-item-image" src="./images/dist/stocks/tesla--big.svg" alt="">
+						<p class="app-investment-item-ticker">TSLA</p>
+					</div>
+					<!-- <p class="app-investment-item-name">Apple</p> -->
+					<p class="app-investment-item-presence">2 шт. по 550.20</p>
+				</div>
+				<div class="app-investment-item-price">
+					<div class="value">584</div>
+					<div class="dynamic-value increase">+0.75%</div>
+				</div>
+			</div>
+		</div>
+		<div class="page-investment-action-wrapper">
+			<div class="form-field">
+				<input type="text" pattern="\d*" maxlength="10" id="count-field" class="form-control form-control-lg"
+					placeholder="Укажите сумму" id="name">
+				<button class="btn btn-secondary btn-max">MAX</button>
+			</div>
+
+			<div class="text-center">
+				<a href="investment-done.html" class="btn btn-success btn-lg">
+					Купить за
+					<span id="price-value"> 12 124 000</span>
+					<img class="balance-icon" src="./images/dist/coin.svg" alt="">
+				</a>
+			</div>
+		</div>
+
+		<div id="app-action-button-bar">
+			<div class="container">
+				<a href="investment-done.html" class="btn btn-success btn-lg">
+					Купить за
+					<span id="price-value"> 12 124 000</span>
+					<img class="balance-icon" src="./images/dist/coin.svg" alt="">
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+<!--#include virtual="/parts/appNavigationBar.html" -->
+<!--#include virtual="/parts/footer.html" -->

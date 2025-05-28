@@ -72,13 +72,14 @@ function scripts() {
 					})
 				]
 			},
-		}, webpack)).on('error', (err) => {
-			this.emit('end')
+		}, webpack)).on('error', function (err) { // Заменили стрелочную функцию на обычную функцию
+			this.emit('end');
 		})
 		.pipe(concat('app.min.js'))
 		.pipe(dest('app/js'))
-		.pipe(browserSync.stream())
+		.pipe(browserSync.stream());
 }
+
 
 function styles() {
 	return src([`app/styles/${preprocessor}/*.*`, `!app/styles/${preprocessor}/_*.*`])

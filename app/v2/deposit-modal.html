@@ -1,0 +1,88 @@
+<!--#set var="title" value="The Game" -->
+<!--#include virtual="/parts/v2/header.html" -->
+
+<div class="app">
+    <header id="v-header">
+        <div class="container">
+            <a href="" class="v-header-back">
+                <img src="../images/dist/arrow-back.svg" alt="">
+            </a>
+            <div class="v-route-name">
+                Депозиты
+            </div>
+            <a href="" class="v-profile">
+                <div class="v-profile-wrapper">
+                    <div class="v-profile-indicator"></div>
+                    <p>A</p>
+                </div>
+            </a>
+        </div>
+    </header>
+    <div class="page container page-with-nav">
+        <div class="v-deposit__form">
+            <h2 class="v-deposit__form-title">Депозит USD</h2>
+            <p class="v-deposit__form-description">Вы можете положить деньги на депозит под 1% годовых</p>
+
+            <div class="v-vield-wrapper">
+                <input id="id_birthday_year" type="number" maxlength="4" class="v-field is-invalid" id="birthday"
+                    placeholder="Укажите сумму">
+                <div class="isinvalid-feedback">
+                    Недостаточно средств на счёте
+                </div>
+            </div>
+            <div class="v-deposit__form-btn-wrapper">
+                <a href="" class="v-btn v-btn--primary v-deposit__form-btn"
+                    onclick="modalHandler.open(event, 'modal1')">Внести</a>
+                <a href="" class="v-btn v-btn--primary v-btn--outline v-deposit__form-btn"
+                    onclick="modalHandler.open(event, 'modal2')">Снять</a>
+            </div>
+        </div>
+
+        <div class="v-features">
+            <div class="v-features__item">
+                <div class="v-features__item-label">На депозите</div>
+                <div class="v-features__item-value">$ 117 873,80</div>
+            </div>
+            <div class="v-features__item">
+                <div class="v-features__item-label">Начислено</div>
+                <div class="v-features__item-value">$ 873</div>
+                <img class="v-features__item-cat" src="../images/dist/cat.png" />
+            </div>
+        </div>
+
+        <div class="v-deposit__history">
+            <div class="v-deposit__history-item">
+                <span class="v-deposit__history-item-label">Последний взнос</span>
+                <span class="v-deposit__history-item-value">$ 1000</span>
+                <span class="v-deposit__history-item-date">22 часа назад</span>
+            </div>
+            <div class="v-deposit__history-item">
+                <span class="v-deposit__history-item-label">Последнее снятие</span>
+                <span class="v-deposit__history-item-value">$ 500</span>
+                <span class="v-deposit__history-item-date">12 апреля</span>
+            </div>
+        </div>
+
+        <div id="modal1" class="v-modal__overlay v-deposit__modal active" onclick="modalHandler.close(event, 'modal1')">
+            <div class="v-modal" onclick="event.stopPropagation()">
+                <h2 class="v-deposit__modal-title">Депозит успешно пополнен</h2>
+                <p class="v-deposit__modal-value v-deposit__modal-growth v-deposit__modal-growth--up">$ 3000</p>
+                <a href="" class="v-btn v-btn--primary v-deposit__modal-btn"
+                    onclick="modalHandler.close(event, 'modal1')">Ок</a>
+            </div>
+        </div>
+
+        <div id="modal2" class="v-modal__overlay v-deposit__modal" onclick="modalHandler.close(event, 'modal1')">
+            <div class="v-modal" onclick="event.stopPropagation()">
+                <h2 class="v-deposit__modal-title">Средства успешно сняты</h2>
+                <p class="v-deposit__modal-value v-deposit__modal-growth v-deposit__modal-growth--down">$ 3000</p>
+                <a href="" class="v-btn v-btn--primary v-deposit__modal-btn"
+                    onclick="modalHandler.close(event, 'modal2')">Ок</a>
+            </div>
+        </div>
+
+        <!--#include virtual="../parts/v2/appNavigationBar.html" -->
+    </div>
+</div>
+
+<!--#include virtual="../parts/v2/footer.html" -->

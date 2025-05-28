@@ -1,0 +1,186 @@
+<!--#set var="title" value="The Game" -->
+<!--#include virtual="/parts/v2/header.html" -->
+
+<div class="app">
+    <header id="v-header">
+        <div class="container">
+            <a href="" class="v-header-back">
+                <img src="../images/dist/arrow-back.svg" alt="">
+            </a>
+            <div class="v-route-name">
+                Биржи
+            </div>
+            <a href="" class="v-profile">
+                <div class="v-profile-wrapper">
+                    <div class="v-profile-indicator"></div>
+                    <p>A</p>
+                </div>
+            </a>
+        </div>
+    </header>
+    <div class="page container page-with-nav">
+        <div class="v-ffin-promo-item">
+            <div class="v-ffin-promo-wrapper">
+                <div class="v-ffin-promo-info-cover">
+                    <img src="../images/dist/freedom-broker-logo.png" alt="">
+                </div>
+            </div>
+            <div class="v-ffin-app-link-wrapper">
+                <a href="https://ffin-kz.onelink.me/ZmAs/TheGame" class="v-ffin-app-link">Скачать приложение</a>
+            </div>
+            <div class="v-ffin-promo-item-description">Лицензия МФЦА №AFSA-A-LA-2020-0019</div>
+            <div class="v-ffin-promo-item-description">Откройте счет онлайн за 10 минут и начните инвестировать уже
+                сегодня
+            </div>
+            <div class="v-ffin-promo-item-description">Узнать больше: <a href="">fbroker.kz</a></div>
+        </div>
+        <div class="v-stock-list">
+            <div class="v-stock-item">
+                <div class="v-stock-item__logo">
+                    <img src="../images/dist/nasdaq-logo.png" alt="">
+                </div>
+
+                <div class="v-stock-item__name-wrapper">
+                    <p class="v-stock-item__name">NASDAQ</p>
+                    <p class="v-stock-item__value"><img
+                            src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f1fa-1f1f8.svg" alt="🇺🇸"
+                            width="14"> USD</p>
+                </div>
+                <ul class="v-stock-item__time">
+                    <li>
+                        <p>19:30 – 02:00</p>
+                        <span>UTC+5</span>
+                    </li>
+                </ul>
+                <div class="v-stock-item__description">
+                    Американская фондовая биржа
+                </div>
+                <div class="v-stock-item__stock">
+                    Доступны акции
+                    25 компаний
+                </div>
+            </div>
+            <div class="v-stock-item">
+                <div class="v-stock-item__logo">
+                    <img src="../images/dist/nyse-logo.png" alt="">
+                </div>
+
+                <div class="v-stock-item__name-wrapper">
+                    <p class="v-stock-item__name">NYSE</p>
+                    <p class="v-stock-item__value"><img
+                            src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f1fa-1f1f8.svg" alt="🇺🇸"
+                            width="14">
+                        USD</p>
+                </div>
+                <ul class="v-stock-item__time">
+                    <li>
+                        <p>19:30 – 02:00</p>
+                        <span>UTC+5</span>
+                    </li>
+                </ul>
+                <div class="v-stock-item__description">
+                    Нью-Йоркская фондовая биржа
+                </div>
+                <div class="v-stock-item__stock">
+                    Доступны акции
+                    10 компаний
+                </div>
+            </div>
+            <div class="v-stock-item">
+                <div class="v-stock-item__logo">
+                    <img src="../images/dist/tse-logo.png" alt="">
+                </div>
+
+                <div class="v-stock-item__name-wrapper">
+                    <p class="v-stock-item__name">TSE</p>
+                    <p class="v-stock-item__value"><img
+                            src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f1ef-1f1f5.svg" alt="🇺🇸"
+                            width="14">
+                        JPY</p>
+                </div>
+                <ul class="v-stock-item__time">
+                    <li>
+                        <p>06:00 – 08:30</p>
+                    </li>
+                    <li>
+                        <p>09:30 – 12:00</p>
+                        <span>UTC+5</span>
+                    </li>
+                </ul>
+                <div class="v-stock-item__description">
+                    Токийская фондовая биржа
+                </div>
+                <div class="v-stock-item__stock">
+                    Доступны акции
+                    10 компаний
+                </div>
+            </div>
+            <div class="v-stock-item v-stock-item--closed" onclick="modalHandler.open(event, 'modal1')">
+                <div class="v-stock-item__logo">
+                    <img src="../images/dist/tse-logo.png" alt="">
+                </div>
+
+                <div class="v-stock-item__name-wrapper">
+                    <p class="v-stock-item__name">TSE</p>
+                    <p class="v-stock-item__value"><img
+                            src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f1ef-1f1f5.svg" alt="🇺🇸"
+                            width="14">
+                        JPY</p>
+                </div>
+                <ul class="v-stock-item__time">
+                    <li>
+                        <p>06:00 – 08:30</p>
+                    </li>
+                    <li>
+                        <p>09:30 – 12:00</p>
+                        <span>UTC+5</span>
+                    </li>
+                </ul>
+                <div class="v-stock-item__description">
+                    Токийская фондовая биржа
+                </div>
+                <div class="v-stock-item__stock">
+                    Доступны акции
+                    10 компаний
+                </div>
+
+                <div href="" class="v-ob__item-question">
+                    <img src="../images/dist/question-icon.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="v-ffin-promo-item">
+            <div class="v-ffin-promo-wrapper">
+                <div class="v-ffin-promo-info-cover">
+                    <img src="../images/dist/freedom-broker-logo.png" alt="">
+                </div>
+            </div>
+            <div class="v-ffin-app-link-wrapper">
+                <a href="https://ffin-kz.onelink.me/ZmAs/TheGame" class="v-ffin-app-link">Скачать приложение</a>
+            </div>
+            <div class="v-ffin-promo-item-description">Лицензия МФЦА №AFSA-A-LA-2020-0019</div>
+            <div class="v-ffin-promo-item-description">Акции холдинга торгуются на бирже NASDAQ в Нью-Йорке.
+                Деятельность компании регулирует Комиссия США
+                по ценным бумагам и биржам (SEC).
+            </div>
+            <div class="v-ffin-promo-item-description">Узнать больше: <a href="">fbroker.kz</a></div>
+        </div>
+        <div id="modal1" class="v-modal__overlay v-deposit__modal" onclick="modalHandler.close(event, 'modal1')">
+            <div class="v-modal" onclick="event.stopPropagation()">
+                <h2 class="v-deposit__modal-title">Доступно
+                    на серебряном уровне или по подписке 🔥</h2>
+                <div class="v-modal__btn-group">
+                    <a href="" class="v-btn v-btn--primary v-btn--outline"
+                        onclick="modalHandler.close(event, 'modal1')">Позже</a>
+
+                    <a href="" class="v-btn v-btn--blue-to-purple"
+                        onclick="modalHandler.close(event, 'modal1')">Оформить
+                        подписку</a>
+                </div>
+            </div>
+        </div>
+        <!--#include virtual="../parts/v2/appNavigationBar.html" -->
+    </div>
+</div>
+
+<!--#include virtual="../parts/v2/footer.html" -->

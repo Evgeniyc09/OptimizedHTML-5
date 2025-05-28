@@ -1,0 +1,76 @@
+.registration {
+  padding: 65px 15px 0;
+
+  .page-header-title {
+    font-size: 36px;
+  }
+
+  .welcome {
+    margin: 25px 0;
+    p {
+      max-width: 270px;
+      margin: 0 auto;
+    }
+  }
+
+  .form-control {
+    height: 65px;
+    border-radius: 8px;
+  }
+
+  .btn {
+    height: 65px;
+  }
+
+  .form-check {
+    text-align: center;
+  }
+
+  .form-check-input {
+    width: 30px;
+    height: 30px;
+    float: none;
+    margin: 0 0 10px;
+  }
+
+  .policy {
+    text-align: center;
+    margin: 25px auto 45px;
+    font-size: 14px;
+    color: $textsecondary;
+  }
+  .invalid-feedback {
+    text-align: center;
+  }
+
+  &-header {
+    position: fixed;
+    max-width: 450px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 12px;
+    background: white;
+    margin: 0 auto;
+    z-index: 4;
+
+    display: flex;
+    justify-content: space-between;
+
+    .btn {
+      height: auto;
+    }
+  }
+
+  .page-header {
+    margin: 10px 0 32px;
+  }
+
+  &-logo {
+    text-align: center;
+    img {
+      width: 150px;
+    }
+  }
+}

@@ -1,0 +1,282 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>OptimizedHTML 5</title>
+	<meta name="description" content="Startup HTML template OptimizedHTML 5">
+
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="icon" href="images/favicon.png">
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<!-- datapicker -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@25.2.1/build/css/intlTelInput.css">
+	<link rel="stylesheet" href="../css/app.min.css">
+	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/evgeniyc09/the-game-cdn@v1.0.3/css/app.min.css"> -->
+
+</head>
+
+<body>
+
+<div class="app">
+
+	<div class="page v-registration container">
+		<div class="v-registration-logo">
+			<img src="../images/dist/logo.svg" alt="">
+		</div>
+
+		<div class="v-registration-title">Регистрация</div>
+		<div class="v-registration-description">В игре могут участвовать все, кому исполнилось 14 лет</div>
+
+		<form id="registerForm">
+			<div class="v-vield-wrapper">
+				<input id="id_first_name" type="text" class="v-field is-valid" placeholder="Ваше имя" id="name">
+			</div>
+			<div class="v-vield-wrapper">
+				<input id="id_birthday_year" type="number" maxlength="4" class="v-field is-invalid" id="birthday"
+					placeholder="Год рождения">
+				<div class="isinvalid-feedback">
+					В игре могут участвовать все, кому исполнилось 18 лет
+				</div>
+				<i class="bi bi-x"></i>
+			</div>
+			<div class="v-vield-wrapper">
+				<input id="id_phone" type="tel" class="v-field phone-input" placeholder="Введите номер телефона">
+
+				<i class="bi bi-x"></i>
+			</div>
+			<div class="v-gender-field">
+				<p>Пол</p>
+				<label class="v-radio-gender v-radio-gender--male">
+					<input type="radio" name="option" checked>
+					<span>
+						<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path opacity="0.992" fill-rule="evenodd" clip-rule="evenodd"
+								d="M0 31.5836C0 31.0285 0 30.4734 0 29.9183C0.445695 27.3779 1.80708 25.5044 4.08416 24.2978C4.4668 24.1426 4.85577 24.0039 5.25107 23.8815C7.05672 23.4653 8.84871 23.0073 10.6272 22.5076C10.7421 21.9609 10.8671 21.4197 11.0022 20.8839C9.7699 19.5179 8.99199 17.9219 8.66843 16.096C7.98453 15.8709 7.49832 15.4268 7.2098 14.7638C6.89094 13.5057 6.75202 12.2289 6.79305 10.9335C6.98504 10.2696 7.34623 9.71445 7.8766 9.26814C7.91114 8.39117 7.86947 7.51687 7.75157 6.64524C7.80753 3.75846 9.2523 2.03759 12.0858 1.48269C12.8293 1.34042 13.5794 1.25716 14.3362 1.23289C15.8531 0.34755 17.4923 -0.0549122 19.2539 0.0255236C20.9755 -0.113682 22.5314 0.316533 23.9215 1.31616C25.4326 2.73022 25.7799 4.38171 24.9634 6.27053C24.7454 6.62717 24.4954 6.96023 24.2133 7.26974C24.1299 7.99033 24.1021 8.712 24.1299 9.43467C25.1136 10.161 25.4748 11.1325 25.2135 12.349C25.1023 13.1817 24.9912 14.0143 24.8801 14.847C24.8057 15.1345 24.6668 15.3843 24.4633 15.5964C24.1338 15.823 23.8143 16.0589 23.5048 16.3042C23.1546 18.1973 22.3211 19.8349 21.0043 21.2169C21.1353 21.6429 21.2603 22.0731 21.3793 22.5076C23.0528 22.9012 24.7338 23.2759 26.422 23.6317C29.3299 24.5381 31.1497 26.4671 31.8815 29.4187C32.0035 30.1365 32.0313 30.8581 31.9648 31.5836C31.8676 31.7363 31.7425 31.8612 31.5898 31.9583C21.1987 32.0139 10.8078 32.0139 0.416751 31.9583C0.261581 31.8446 0.122664 31.7197 0 31.5836Z"
+								fill="#94D5FD" />
+						</svg>
+					</span>
+				</label>
+
+				<label class="v-radio-gender v-radio-gender--female">
+					<input type="radio" name="option">
+					<span>
+						<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path opacity="0.993" fill-rule="evenodd" clip-rule="evenodd"
+								d="M0 31.5833C0 31.0277 0 30.4722 0 29.9166C0.445695 27.374 1.80708 25.4989 4.08416 24.2913C4.4668 24.136 4.85577 23.9971 5.25107 23.8746C7.05246 23.4368 8.84446 22.9785 10.6272 22.4996C10.7424 22.2339 10.7563 21.97 10.6688 21.7078C8.91798 21.437 7.25098 20.9092 5.66782 20.1244C5.3163 19.7329 5.19127 19.2746 5.29274 18.7494C5.90718 18.1622 6.3795 17.4677 6.7097 16.666C7.1591 15.452 7.46472 14.2019 7.62655 12.9158C7.71584 11.444 7.79919 9.97174 7.8766 8.49892C8.30979 4.51183 10.3797 1.77558 14.0862 0.290219C15.4769 -0.0967398 16.8661 -0.0967398 18.2537 0.290219C18.778 0.619934 19.2226 1.03662 19.5873 1.54028C21.3372 1.53976 22.518 2.35925 23.1297 3.99872C23.5993 5.29069 23.8771 6.62409 23.9632 7.9989C24.0109 9.44371 24.0664 10.8882 24.1299 12.3324C24.2293 14.5657 24.8684 16.6214 26.047 18.4994C26.7885 19.061 26.858 19.686 26.2553 20.3745C24.6922 21.1194 23.053 21.6194 21.3377 21.8745C21.2461 22.0827 21.26 22.291 21.3793 22.4996C23.0528 22.8935 24.7338 23.2685 26.422 23.6246C29.3299 24.5318 31.1497 26.4625 31.8815 29.4165C32.0035 30.1349 32.0313 30.8572 31.9648 31.5833C31.8676 31.7361 31.7425 31.8611 31.5898 31.9583C21.1987 32.0139 10.8078 32.0139 0.416751 31.9583C0.261581 31.8445 0.122664 31.7195 0 31.5833Z"
+								fill="#C5C5C5" />
+						</svg>
+					</span>
+				</label>
+			</div>
+			<div class="v-vield-wrapper">
+				<input class="v-field" placeholder="Город, где вы живёте">
+			</div>
+			<button type="submit" class="v-btn v-btn--primary">Играть!</button>
+			<div class="v-policy">
+				Нажимая на кнопку, вы принимаете <a href="#rules">оферту</a>, <br> соглашаетесь с <a
+					href="#rules">условиями игры</a> и <a href="#rules">политикой
+					конфиденциальности</a>
+			</div>
+
+
+			<div class="accordion" id="accordionExample">
+				<div class="accordion-item" id="rules">
+					<h2 class="accordion-header" id="headingTwo1">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+							data-bs-target="#collapseTwo1" aria-expanded="false" aria-controls="collapseTwo1">
+							Оферта
+						</button>
+					</h2>
+					<div id="collapseTwo1" class="accordion-collapse collapse" aria-labelledby="headingTwo1"
+						data-bs-parent="#accordionExample">
+						<div class="accordion-body">
+							<p>Мы предлагаем множество сервисов, которые помогают миллионам людей ежедневно узнавать
+								что-то новое,
+								решать различные
+								задачи и просто общаться друг с другом. Вот лишь несколько примеров наших продуктов:</p>
+							<ul>
+								<li>приложения, сайты и устройства, такие как Google Поиск, YouTube и Google Home;</li>
+								<li>платформы, такие как браузер Chrome и операционная система Android;</li>
+								<li>решения, которые можно встраивать в приложения от других разработчиков и на
+									сторонние сайты,
+									например рекламные
+									сервисы, сервисы аналитики, встроенные Google Карты.</li>
+							</ul>
+							<p>Чтобы управлять собственной конфиденциальностью, Вы можете использовать наши сервисы
+								разными способами.
+								Если Вы
+								хотите размещать контент и управлять им, например переписываться в Gmail и хранить
+								фотографии в Google
+								Фото, а также
+								получать более актуальные результаты в Google Поиске, Вы можете создать аккаунт Google.
+								В то же время
+								многими
+								сервисами можно пользоваться, не входя в аккаунт и даже не создавая его, например искать
+								в Google и
+								смотреть видео
+								на YouTube. Кроме того, Вы можете посещать веб-страницы в <a
+									href="https://support.google.com/chrome/answer/9845881?hl=ru" class="N6CPUe"
+									target="_blank">режиме
+									инкогнито
+									Google Chrome</a>, в котором сведения о Ваших действиях в интернете недоступны
+								другим пользователям
+								устройства.
+								Во всех наших сервисах Вы сами указываете, можем ли мы собирать некоторые типы
+								информации о Вас и как ее
+								можно
+								использовать.</p>
+							<p>Чтобы наши правила были как можно более понятными, мы добавили в них примеры, видеоролики
+								и определения
+								<a href="privacy/key-terms?hl=ru#key-terms">основных терминов</a>. Если у Вас появятся
+								вопросы в
+								отношении Политики
+								конфиденциальности Google, <a
+									href="https://support.google.com/policies?p=privpol_privts&amp;hl=ru" class="N6CPUe"
+									target="_blank">свяжитесь с нами</a>.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="accordion-item" id="rules">
+					<h2 class="accordion-header" id="headingTwo">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+							data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+							Условия использования
+						</button>
+					</h2>
+					<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+						data-bs-parent="#accordionExample">
+						<div class="accordion-body">
+							<p>Мы предлагаем множество сервисов, которые помогают миллионам людей ежедневно узнавать
+								что-то новое,
+								решать различные
+								задачи и просто общаться друг с другом. Вот лишь несколько примеров наших продуктов:</p>
+							<ul>
+								<li>приложения, сайты и устройства, такие как Google Поиск, YouTube и Google Home;</li>
+								<li>платформы, такие как браузер Chrome и операционная система Android;</li>
+								<li>решения, которые можно встраивать в приложения от других разработчиков и на
+									сторонние сайты,
+									например рекламные
+									сервисы, сервисы аналитики, встроенные Google Карты.</li>
+							</ul>
+							<p>Чтобы управлять собственной конфиденциальностью, Вы можете использовать наши сервисы
+								разными способами.
+								Если Вы
+								хотите размещать контент и управлять им, например переписываться в Gmail и хранить
+								фотографии в Google
+								Фото, а также
+								получать более актуальные результаты в Google Поиске, Вы можете создать аккаунт Google.
+								В то же время
+								многими
+								сервисами можно пользоваться, не входя в аккаунт и даже не создавая его, например искать
+								в Google и
+								смотреть видео
+								на YouTube. Кроме того, Вы можете посещать веб-страницы в <a
+									href="https://support.google.com/chrome/answer/9845881?hl=ru" class="N6CPUe"
+									target="_blank">режиме
+									инкогнито
+									Google Chrome</a>, в котором сведения о Ваших действиях в интернете недоступны
+								другим пользователям
+								устройства.
+								Во всех наших сервисах Вы сами указываете, можем ли мы собирать некоторые типы
+								информации о Вас и как ее
+								можно
+								использовать.</p>
+							<p>Чтобы наши правила были как можно более понятными, мы добавили в них примеры, видеоролики
+								и определения
+								<a href="privacy/key-terms?hl=ru#key-terms">основных терминов</a>. Если у Вас появятся
+								вопросы в
+								отношении Политики
+								конфиденциальности Google, <a
+									href="https://support.google.com/policies?p=privpol_privts&amp;hl=ru" class="N6CPUe"
+									target="_blank">свяжитесь с нами</a>.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="accordion-item" id="policy">
+					<h2 class="accordion-header" id="headingOne">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+							data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+							Политика конфиденциальности
+						</button>
+					</h2>
+					<div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+						data-bs-parent="#accordionExample">
+						<div class="accordion-body">
+							<p>Мы предлагаем множество сервисов, которые помогают миллионам людей ежедневно узнавать
+								что-то новое,
+								решать различные
+								задачи и просто общаться друг с другом. Вот лишь несколько примеров наших продуктов:</p>
+							<ul>
+								<li>приложения, сайты и устройства, такие как Google Поиск, YouTube и Google Home;</li>
+								<li>платформы, такие как браузер Chrome и операционная система Android;</li>
+								<li>решения, которые можно встраивать в приложения от других разработчиков и на
+									сторонние сайты,
+									например рекламные
+									сервисы, сервисы аналитики, встроенные Google Карты.</li>
+							</ul>
+							<p>Чтобы управлять собственной конфиденциальностью, Вы можете использовать наши сервисы
+								разными способами.
+								Если Вы
+								хотите размещать контент и управлять им, например переписываться в Gmail и хранить
+								фотографии в Google
+								Фото, а также
+								получать более актуальные результаты в Google Поиске, Вы можете создать аккаунт Google.
+								В то же время
+								многими
+								сервисами можно пользоваться, не входя в аккаунт и даже не создавая его, например искать
+								в Google и
+								смотреть видео
+								на YouTube. Кроме того, Вы можете посещать веб-страницы в <a
+									href="https://support.google.com/chrome/answer/9845881?hl=ru" class="N6CPUe"
+									target="_blank">режиме
+									инкогнито
+									Google Chrome</a>, в котором сведения о Ваших действиях в интернете недоступны
+								другим пользователям
+								устройства.
+								Во всех наших сервисах Вы сами указываете, можем ли мы собирать некоторые типы
+								информации о Вас и как ее
+								можно
+								использовать.</p>
+							<p>Чтобы наши правила были как можно более понятными, мы добавили в них примеры, видеоролики
+								и определения
+								<a href="privacy/key-terms?hl=ru#key-terms">основных терминов</a>. Если у Вас появятся
+								вопросы в
+								отношении Политики
+								конфиденциальности Google, <a
+									href="https://support.google.com/policies?p=privpol_privts&amp;hl=ru" class="N6CPUe"
+									target="_blank">свяжитесь с нами</a>.
+							</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</form>
+	</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+	integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+	crossorigin="anonymous"></script>
+<!-- Datepicker -->
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script src="https://npmcdn.com/flatpickr/dist/l10n/ru.js"></script>
+<script src="https://unpkg.com/imask"></script>
+<script src="../js/app.min.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/gh/evgeniyc09/the-game-cdn@v1.0.3/js/app.min.js"></script> -->
+
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+.accordion {
+  margin: 25px 0;
+
+  &-button:focus {
+    box-shadow: unset;
+  }
+}
+
+.custom-accordion {
+  overflow: hidden;
+}
+
+.custom-accordion-header {
+  cursor: pointer;
+}
+
+.custom-accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.custom-accordion.active .custom-accordion-content {
+  max-height: 500px; /* Достаточно большое значение */
+}

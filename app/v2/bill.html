@@ -1,0 +1,238 @@
+<!--#set var="title" value="The Game" -->
+<!--#include virtual="/parts/v2/header.html" -->
+
+<div class="app">
+    <header id="v-header">
+        <div class="container">
+            <a href="" class="v-header-back">
+                <img src="../images/dist/arrow-back.svg" alt="">
+            </a>
+            <div class="v-route-name">
+                Счета
+            </div>
+            <a href="" class="v-profile">
+                <div class="v-profile-wrapper">
+                    <div class="v-profile-indicator"></div>
+                    <p>A</p>
+                </div>
+            </a>
+        </div>
+    </header>
+    <div class="page container page-with-nav v-bill-page">
+        <div class="page-with-icon">
+            <img class="page-icon" src="../images/dist/bill-page-icon.png" alt="">
+
+            <h2 class="v-bill__title">Переводы между счетами</h2>
+            <p class="v-bill__description">
+                Переводите деньги между вашими счетами. Конвертация осуществляется
+                по курсу Yahoo Finance.
+            </p>
+
+
+            <div class="v-bill__list">
+                <div class="v-bill__item">
+                    <div class="v-bill__item-info">
+                        <div class="v-bill__item-icon">
+                            <img src="../images/dist/icon-currency-usd.png" alt="">
+                        </div>
+                        <div class="v-bill__item-label">USD</div>
+                    </div>
+
+                    <div class="v-bill__value">
+                        $ 64 003,24
+                    </div>
+                </div>
+
+                <div class="v-bill__item">
+                    <div class="v-bill__item-info">
+                        <div class="v-bill__item-icon">
+                            <img src="../images/dist/icon-currency-kzt.png" alt="">
+                        </div>
+                        <div class="v-bill__item-label">KZT</div>
+                    </div>
+
+                    <div class="v-bill__value">
+                        ₸ 892 360,02
+                    </div>
+                </div>
+
+                <div class="v-bill__item">
+                    <div class="v-bill__item-info">
+                        <div class="v-bill__item-icon">
+                            <img src="../images/dist/icon-currency-jpy.png" alt="">
+                        </div>
+                        <div class="v-bill__item-label">JPY</div>
+                    </div>
+
+                    <div class="v-bill__value">
+                        ¥ 120 245,50
+                    </div>
+                </div>
+            </div>
+
+            <div class="v-bill-transfer">
+                <p class="v-bill-transfer__title">ПЕРЕВОДЫ</p>
+                <form action="">
+                    <div class="v-transfer-select" data-select>
+                        <input type="hidden" name="select-value" data-hidden-input>
+                        <div class="v-transfer-select__trigger" data-trigger>
+                            <div class="v-transfer-select__item">
+                                <div class="v-transfer-select__item-info">
+                                    <div class="v-transfer-select__item-icon">
+                                        <img src="../images/dist/icon-currency-usd.png" alt="">
+                                    </div>
+                                    <div class="v-transfer-select__item-label">USD</div>
+                                </div>
+
+                                <div class="v-transfer-select__value">
+                                    $ 64 003,24
+                                </div>
+                            </div>
+                        </div>
+                        <div class="v-transfer-select__body" data-body>
+                            <div class="v-transfer-select__body-title">Выберите счет</div>
+                            <ul class="v-transfer-select__options">
+                                <li class="v-transfer-select__option" data-value="option1">
+                                    <div class="v-transfer-select__item">
+                                        <div class="v-transfer-select__item-info">
+                                            <div class="v-transfer-select__item-icon">
+                                                <img src="../images/dist/icon-currency-usd.png" alt="">
+                                            </div>
+                                            <div class="v-transfer-select__item-label">USD</div>
+                                        </div>
+
+                                        <div class="v-transfer-select__value">
+                                            $ 64 003,24
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="v-transfer-select__option" data-value="option2">
+                                    <div class="v-transfer-select__item">
+                                        <div class="v-transfer-select__item-info">
+                                            <div class="v-transfer-select__item-icon">
+                                                <img src="../images/dist/icon-currency-kzt.png" alt="">
+                                            </div>
+                                            <div class="v-transfer-select__item-label">KZT</div>
+                                        </div>
+
+                                        <div class="v-transfer-select__value">
+                                            ₸ 892 360,02
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="v-transfer-select__option" data-value="option3">
+                                    <div class="v-transfer-select__item">
+                                        <div class="v-transfer-select__item-info">
+                                            <div class="v-transfer-select__item-icon">
+                                                <img src="../images/dist/icon-currency-jpy.png" alt="">
+                                            </div>
+                                            <div class="v-transfer-select__item-label">JPY</div>
+                                        </div>
+
+                                        <div class="v-transfer-select__value">
+                                            ¥ 120 245,50
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="v-transfer-select" data-select>
+                        <input type="hidden" name="select-value" data-hidden-input>
+                        <div class="v-transfer-select__trigger" data-trigger>
+                            <div class="v-transfer-select__item v-transfer-select__item--empty">
+                                <div class="v-transfer-select__item-info">
+                                    <div class="v-transfer-select__item-icon">
+                                        <img src="../images/dist/cards.png" alt="">
+                                    </div>
+                                    <div class="v-transfer-select__item-label">Куда перевести</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="v-transfer-select__body" data-body>
+                            <div class="v-transfer-select__body-title">Выберите счет</div>
+                            <ul class="v-transfer-select__options">
+                                <li class="v-transfer-select__option" data-value="option1">
+                                    <div class="v-transfer-select__item">
+                                        <div class="v-transfer-select__item-info">
+                                            <div class="v-transfer-select__item-icon">
+                                                <img src="../images/dist/icon-currency-usd.png" alt="">
+                                            </div>
+                                            <div class="v-transfer-select__item-label">USD</div>
+                                        </div>
+
+                                        <div class="v-transfer-select__value">
+                                            $ 64 003,24
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="v-transfer-select__option" data-value="option2">
+                                    <div class="v-transfer-select__item">
+                                        <div class="v-transfer-select__item-info">
+                                            <div class="v-transfer-select__item-icon">
+                                                <img src="../images/dist/icon-currency-kzt.png" alt="">
+                                            </div>
+                                            <div class="v-transfer-select__item-label">KZT</div>
+                                        </div>
+
+                                        <div class="v-transfer-select__value">
+                                            ₸ 892 360,02
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="v-transfer-select__option" data-value="option3">
+                                    <div class="v-transfer-select__item">
+                                        <div class="v-transfer-select__item-info">
+                                            <div class="v-transfer-select__item-icon">
+                                                <img src="../images/dist/icon-currency-jpy.png" alt="">
+                                            </div>
+                                            <div class="v-transfer-select__item-label">JPY</div>
+                                        </div>
+
+                                        <div class="v-transfer-select__value">
+                                            ¥ 120 245,50
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="v-bill-transfer__row">
+                        <div class="v-bill-transfer__col">
+                            <p class="v-bill-transfer__col-label">Сумма перевода</p>
+                            <div class="v-vield-wrapper">
+                                <input id="id_first_name" type="text" class="v-field" placeholder="$ 0">
+                            </div>
+                        </div>
+                        <div class="v-bill-transfer__col">
+                            <p class="v-bill-transfer__col-label">Сумма зачисления</p>
+                            <div class="v-vield-wrapper">
+                                <input id="name" type="text" class="v-field v-field__result" placeholder="$ 0" readonly
+                                    value="$1212">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="v-bill-transfer__btn-wrapper">
+                        <button type="submit" class="v-btn v-btn--primary"
+                            onclick="modalHandler.open(event, 'modal1')">Перевести</button>
+                    </div>
+                </form>
+                <div id="modal1" class="v-modal__overlay v-deposit__modal"
+                    onclick="modalHandler.close(event, 'modal1')">
+                    <div class="v-modal" onclick="event.stopPropagation()">
+                        <h2 class="v-deposit__modal-title">Перевод успешно совершен</h2>
+                        <p class="v-deposit__modal-value v-deposit__modal-growth v-deposit__modal-growth--up">₸ 50 000
+                        </p>
+                        <a href="" class="v-btn v-btn--primary v-deposit__modal-btn"
+                            onclick="modalHandler.close(event, 'modal1')">Ок</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--#include virtual="../parts/v2/appNavigationBar.html" -->
+    </div>
+</div>
+
+<!--#include virtual="../parts/v2/footer.html" -->

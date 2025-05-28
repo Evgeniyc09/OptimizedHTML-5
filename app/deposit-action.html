@@ -1,0 +1,35 @@
+<!--#set var="title" value="The Game" -->
+<!--#include virtual="/parts/header.html" -->
+
+<div class="app">
+	<div class="page container page-with-nav page-with-action-button page-deposit">
+		<!--#set var="pageTitle" value="Депозит" -->
+		<!--#set var="pageDescription" value="Укажите сумму которую хотите снять или внести" -->
+		<!--#include virtual="/parts/appHeader.html" -->
+		<!--#include virtual="/parts/pageHeader.html" -->
+
+		<div class="page-deposit-action-wrapper">
+			<div class="form-field">
+				<input type="text" pattern="\d*" maxlength="10" id="count-field" class="form-control form-control-lg"
+					placeholder="Укажите сумму" id="name">
+				<button class="btn btn-secondary btn-max">MAX</button>
+			</div>
+
+			<div class="text-center">
+				<a href="deposit-action.html" class="btn btn-danger px-5 btn-lg">
+					Снять
+				</a>
+			</div>
+		</div>
+		<div id="app-action-button-bar">
+			<div class="container">
+				<a href="investment-done.html" class="btn btn-danger btn-lg">
+					Снять
+				</a>
+			</div>
+		</div>
+
+		<!--#include virtual="/parts/appNavigationBar.html" -->
+	</div>
+</div>
+<!--#include virtual="/parts/footer.html" -->

@@ -5,31 +5,323 @@
 <head>
 
 	<meta charset="utf-8">
-	<!-- <base href="/"> -->
+	<base href="/">
 
-	<title>OptimizedHTML 5</title>
+	<title>The Game</title>
 	<meta name="description" content="Startup HTML template OptimizedHTML 5">
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 	<link rel="icon" href="images/favicon.png">
-	<meta property="og:image" content="images/dist/preview.jpg">
-	
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<!-- datapicker -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@25.2.1/build/css/intlTelInput.css">
 	<link rel="stylesheet" href="css/app.min.css">
+	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/evgeniyc09/the-game-cdn@v1.0.3/css/app.min.css"> -->
 
 </head>
 
 <body>
 
-	<div style="max-width: 700px; margin: auto">
+<div class="app">
+	<div class="page container page-with-nav">
+		<div class="home-promo-banner" role="alert">
+			<img src="https://placehold.jp/500x75.png" alt="">
+			<a class="home-promo-banner__link" href="https://t.me/Olessya_Lessya" target="_blank"></a>
+		</div>
+		<div class="alert alert-primary home-promo-alert" role="alert">
+			<div class="home-promo-alert__image-cover">
+				<img src="https://placehold.jp/65x65.png" alt="">
+			</div>
+			<div class="home-promo-alert__content">Место для вашей рекламы Место для вашей
+				рекламы Место для вашей рекламы Место для вашей рекламы ламы Место для вашей рекламы</div>
+			<a class="home-promo-alert__link" href="https://t.me/Olessya_Lessya" target="_blank"></a>
+		</div>
+		<div class="alert alert-warning text-center" role="alert">
+			<a href="winners.html">Посмотреть список победителей</a>
+		</div>
+		
+		
+		<header id="header">
+	<div class="container">
+		<div class="back-to-home">
+			<img class="back-icon" src="./images/dist/arrow.svg" alt="">
+			<a href=""></a>
+		</div>
+		<div class="balance-wrapper">
 
-		<img src="images/dist/preview.jpg" alt="Start HTML5 Template" style="width: 100%"><br><br>
-		<h2 class="heading">Welcome to startup HTML template OptimizedHTML 5!</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam reprehenderit nulla alias expedita a qui, pariatur doloremque ipsa fugit laboriosam odio iure recusandae laborum delectus praesentium magni reiciendis voluptatem. Sed.</p>
+			<div class="balance">
+				<div class="balance-amount">
+					<span class="balance-value">$100 000</span>
+				</div>
+				<div class="actives">
+					<img class="actives-icon" src="./images/dist/arrow-up.svg" alt="">
+					<span class="actives-value up">+15%</span>
+				</div>
+			</div>
+			<div class="balance-info">
+				<span>Свободных средств: $ 12 000</span>
+				<!-- <span>Свободных средств $0. Всё вложено</span> -->
+			</div>
 
+		</div>
+		<div class="avatar has-notice">
+			<a href="profile.html">AP</a>
+		</div>
 	</div>
+</header>
+		<section id="page-header" class="page-header">
+	<div class="container">
+		<h2 class="page-header-title">Инвестируйте!</h2>
+		<p class="page-header-description">Покупайте и продавайте активы, чтобы заработать</p>
+	</div>
+</section>
+		<section id="action-navigation" class="action-navigation">
+	<div class="action-navigation-wrapper">
+		<div class="action-navigation-item">
+			<div class="action-navigation-item-image">
+				<img src="./images/dist/stocks.svg" alt="">
+			</div>
+			<p class="action-navigation-item-name">Акции</p>
+			<a href="investment-list.html" class="action-navigation-link"></a>
+		</div>
+		<div class="action-navigation-item">
+			<div class="action-navigation-item-image">
+				<img src="./images/dist/coins.svg" alt="">
+			</div>
+			<p class="action-navigation-item-name">Валюта</p>
+			<a href="investment-list.html" class="action-navigation-link"></a>
+		</div>
+		<div class="action-navigation-item">
+			<div class="action-navigation-item-image">
+				<img src="./images/dist/metal.svg" alt="">
+			</div>
+			<p class="action-navigation-item-name">Металлы</p>
+			<a href="investment-list.html" class="action-navigation-link"></a>
+		</div>
+		<div class="action-navigation-item">
+			<div class="action-navigation-item-image">
+				<img src="./images/dist/crypto.svg" alt="">
+			</div>
+			<p class="action-navigation-item-name">Крипта</p>
+			<a href="investment-list.html" class="action-navigation-link"></a>
+		</div>
+		<div class="action-navigation-item">
+			<div class="action-navigation-item-image">
+				<img src="./images/dist/deposit.svg" alt="">
+			</div>
+			<p class="action-navigation-item-name">Депозит</p>
+			<a href="deposit.html" class="action-navigation-link"></a>
+		</div>
+		<!-- <div class="action-navigation-item action-navigation-item--education">
+			<div class="action-navigation-item-image">
+				<img src="./images/dist/education.svg" alt="">
+			</div>
+			<p class="action-navigation-item-name">Обучение</p>
+			<a href="education-list.html" class="action-navigation-link"></a>
+		</div> -->
+		<div class="action-navigation-item action-navigation-item--education">
+			<div class="action-navigation-item-image">
+				<img src="./images/dist/estate.svg" alt="">
+			</div>
+			<p class="action-navigation-item-name">Квартиры</p>
+			<a href="estate-list.html" class="action-navigation-link"></a>
+		</div>
+		<div class="action-navigation-item action-navigation-item--education">
+			<div class="action-navigation-item-image">
+				<img src="./images/dist/zhancoffee-cup.png" alt="">
+			</div>
+			<p class="action-navigation-item-name">Zhan Coffee</p>
+			<a href="coffee-franchise-list.html" class="action-navigation-link"></a>
+		</div>
+		<!-- <div class="action-navigation-item action-navigation-item--education">
+			<div class="action-navigation-item-image">
+				<img src="./images/dist/zhancoffee-logo.png" alt="">
+			</div>
+			<p class="action-navigation-item-name">Zhan Coffee</p>
+			<a href="estate-list.html" class="action-navigation-link"></a>
+		</div> -->
+	</div>
+</section>
+		<section id="news" class="news">
+	<div class="news-item">
+		<div class="news-item-cover">
+			<img src="https://via.assets.so/game.png?id=1&q=95&w=360&h=360&fit=fill" alt="">
+		</div>
+		<div class="news-item-content">
+			<div class="news-item-title">Золото дорожает. За последние 2 дня цена поднялась на $3 за унцию.</div>
+		</div>
+		<a href="news.html" class="news-item-link"></a>
+	</div>
+</section>
+		<section id="case" class="case">
+	<div class="case-item">
+		<div class="case-item-cover">
+			<img src="./images/dist/fire.svg" alt="">
+		</div>
+		<div class="case-item-content">
+			<div class="case-item-title">Купите редкую монету по низкой цене и заработайте на перепродаже!</div>
+		</div>
+		<a href="case-list.html" class="case-item-link"></a>
+	</div>
+</section>
+		
+		
+		<section id="page-header" class="page-header">
+	<div class="container">
+		<h2 class="page-header-title">Мой портфель</h2>
+		<p class="page-header-description">Активы</p>
+	</div>
+</section>
+		<section id="app-investment" class="app-investment">
+	<div class="app-investment-wrapper">
+		<div class="app-investment-item">
+			<div class="app-investment-item-invest">
+				<div class="app-investment-item-group">
+					<img class="app-investment-item-image" src="./images/dist/stocks/apple.svg" alt="">
+					<p class="app-investment-item-ticker">AAPL.US <span class="dynamic-value decrease">
+							-5,07%
+						</span></p>
+				</div>
+				<p class="app-investment-item-presence">2 шт. по 550.20 (Всего 1100)</p>
+			</div>
+			<div class="app-investment-item-price">
+				<div class="value">248,21 $</div>
 
-	<script src="js/app.min.js"></script>
+
+
+			</div>
+			<a href="investment.html" class="app-investment-link"></a>
+		</div>
+		<div class="app-investment-item">
+			<div class="app-investment-item-invest">
+				<div class="app-investment-item-group">
+					<img class="app-investment-item-image" src="./images/dist/stocks/tesla--big.svg" alt="">
+					<p class="app-investment-item-ticker">TSLA <span class="dynamic-value increase">+0.75%</span></p>
+				</div>
+				<!-- <p class="app-investment-item-name">Apple</p> -->
+				<p class="app-investment-item-presence">2 шт. по 550.20</p>
+			</div>
+			<div class="app-investment-item-price">
+				<div class="value"> 98 308,93</div>
+
+			</div>
+			<a href="investment.html" class="app-investment-link"></a>
+		</div>
+		<div class="app-investment-item">
+			<div class="app-investment-item-invest">
+				<div class="app-investment-item-group">
+					<img class="app-investment-item-image" src="./images/dist/stocks/nike--big.svg" alt="">
+					<p class="app-investment-item-ticker">NIKE.US <span class="dynamic-value increase">+0.75%</span></p>
+				</div>
+				<!-- <p class="app-investment-item-name">Apple</p> -->
+				<p class="app-investment-item-name">Nike Inc.</p>
+			</div>
+			<div class="app-investment-item-price">
+				<div class="value"> 98 308,93</div>
+			</div>
+			<a href="investment.html" class="app-investment-link"></a>
+		</div>
+		<div class="app-investment-item">
+			<div class="app-investment-item-invest">
+				<div class="app-investment-item-group">
+					<img class="app-investment-item-image" src="./images/dist/stocks/coca-cola--big.svg" alt="">
+					<p class="app-investment-item-ticker">COCA.US <span class="dynamic-value increase">+0.75%</span></p>
+				</div>
+				<!-- <p class="app-investment-item-name">Apple</p> -->
+				<p class="app-investment-item-name">Coca-cola</p>
+			</div>
+			<div class="app-investment-item-price">
+				<div class="value"> 98 308,93</div>
+			</div>
+			<a href="investment.html" class="app-investment-link"></a>
+		</div>
+	</div>
+</section>
+		<footer class="footer">
+	<div class="container">
+		<div class="chat-app-link">
+			<a href="chat.html" class="btn btn-link">📣 Чат игры. Общайтесь!</a>
+		</div>
+		<div class="footer-copyright">
+			<div class="text-center">
+				<p class="footer-name">@ The Game! by Dmitriy Kazantsev, 2025</p>
+			</div>
+		</div>
+		<div class="footer-group-link">
+			<div class="footer-link footer-link--instagram">
+				<a href=""><i class="icon-instagram"></i> Instagram</a>
+			</div>
+			<div class="footer-link"><a href="">Условия</a></div>
+			<div class="footer-link"><a href="">Политика</a></div>
+			<div class="footer-link"><a href="">Сообщите об ошибке</a></div>
+		</div>
+	</div>
+	<div class="powered-by-apps">
+		<a href="https://www.instagram.com/pantsakov1?igsh=MWl3c3V5bGpwc2xwcA==">
+			<div class="powered-by-apps-container">
+				<p>Powered by</p>
+				<img class="apps-logo" src="../images/dist/apps-logo.svg" alt="">
+			</div>
+		</a>
+	</div>
+</footer>
+		<div id="app-navigation" class="app-navigation">
+	<div class="app-navigation-wrapper">
+		<div class="app-navigation-item">
+			<div class="app-navigation-item-icon app-navigation-item-icon--news"></div>
+			<div class="app-navigation-item-text">
+				Новости
+			</div>
+			<a href="news-list.html" class="app-navigation-item-link"></a>
+		</div>
+		<div class="app-navigation-item has-notice">
+			<div class="app-navigation-item-icon app-navigation-item-icon--case"></div>
+			<div class="app-navigation-item-text">
+				Кейсы
+			</div>
+			<a href="case-list.html" class="app-navigation-item-link"></a>
+		</div>
+		<div class="app-navigation-item">
+			<div class="app-navigation-item-icon app-navigation-item-icon--home"></div>
+			<div class="app-navigation-item-text">
+				Главная
+			</div>
+			<a href="index.html" class="app-navigation-item-link"></a>
+		</div>
+		<div class="app-navigation-item active">
+			<div class="app-navigation-item-icon app-navigation-item-icon--rating"></div>
+			<div class="app-navigation-item-text">
+				Рейтинг
+			</div>
+			<a href="rating.html" class="app-navigation-item-link"></a>
+		</div>
+		<div class="app-navigation-item">
+			<div class="app-navigation-item-icon app-navigation-item-icon--education"></div>
+			<div class="app-navigation-item-text">
+				Обучение
+			</div>
+			<a href="education-list.html" class="app-navigation-item-link"></a>
+		</div>
+	</div>
+</div>
+	</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+	integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+	crossorigin="anonymous"></script>
+<!-- Datepicker -->
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script src="https://npmcdn.com/flatpickr/dist/l10n/ru.js"></script>
+<script src="https://unpkg.com/imask"></script>
+<script src="js/app.min.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/gh/evgeniyc09/the-game-cdn@v1.0.3/js/app.min.js"></script> -->
 
 </body>
+
 </html>

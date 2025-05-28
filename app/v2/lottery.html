@@ -1,0 +1,110 @@
+<!--#set var="title" value="The Game" -->
+<!--#include virtual="/parts/v2/header.html" -->
+
+<div class="app">
+    <header id="v-header">
+        <div class="container">
+            <a href="" class="v-header-back">
+                <img src="../images/dist/arrow-back.svg" alt="">
+            </a>
+            <div class="v-route-name">
+                Лотерея
+            </div>
+            <a href="" class="v-profile">
+                <div class="v-profile-wrapper">
+                    <div class="v-profile-indicator"></div>
+                    <p>A</p>
+                </div>
+            </a>
+        </div>
+    </header>
+    <div class="page container v-lottery-page page-with-nav">
+        <div class="v-lottery__logo">
+            <img src="../images/dist/sprint-img.png" alt="">
+        </div>
+        <div class="v-lottery__title">
+            Спринт
+        </div>
+        <div class="v-lottery__description">
+            Каждый десятый билет — призовой
+        </div>
+
+        <div class="v-lottery__features">
+            <div class="v-lottery__item">
+                <div class="v-lottery__item-label">Всего
+                    билетов</div>
+                <div class="v-lottery__item-value">1 млн</div>
+            </div>
+            <div class="v-lottery__item">
+                <div class="v-lottery__item-label">Шанс выигрыша</div>
+                <div class="v-lottery__item-value">1:10</div>
+            </div>
+            <div class="v-lottery__item">
+                <div class="v-lottery__item-label">Цена
+                    билета</div>
+                <div class="v-lottery__item-value">$ 10</div>
+            </div>
+        </div>
+
+        <form class="v-lottery__form">
+            <div class="v-lottery__field-wrapper">
+                <div class="v-lottery__field-label">Количество билетов</div>
+                <input type="number" class="v-lottery__field" id="lotteryCount" placeholder="10">
+            </div>
+            <div class="v-lottery__btn-wrapper">
+                <button type="submit" class="v-btn v-btn--bluegreen" onclick="modalHandler.open(event, 'modal1')">Купить
+                    за $ 100</button>
+            </div>
+        </form>
+
+        <p class="v-lottery__hint">Ваш выигрыш автоматически зачисляется на игровой счет в виртуальной валюте</p>
+
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item" id="rules">
+                <h2 class="accordion-header" id="headingTwo1">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo1" aria-expanded="false" aria-controls="collapseTwo1">
+                        Как распределены призы 🎉
+                    </button>
+                </h2>
+                <div id="collapseTwo1" class="accordion-collapse collapse" aria-labelledby="headingTwo1"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p>Всего 100 000 выигрышных билетов. Как распределены призы:</p>
+
+                        <p>Расходы:</p>
+                        <ul>
+                            <li>$ 1000 - 500 билетов</li>
+                            <li>$ 500- 1500 билетов</li>
+                            <li>$ 250 - 3000 билетов</li>
+                            <li>$ 100-5000 билетов</li>
+                            <li>$50 - 15 000 билетов</li>
+                            <li>$ 25-25 000 билетов</li>
+                            <li>$ 10 - 50 000 билетов</li>
+                        </ul>
+                        <p>Вы покупаете лотерейные билеты за виртуальные деньги. Выигрыш не может быть получен в виде
+                            реальной денежной выплаты. Он
+                            автоматически зачисляется на ваш
+                            игровой счёт.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="modal1" class="v-modal__overlay v-deposit__modal" onclick="modalHandler.close(event, 'modal1')">
+            <div class="v-modal" onclick="event.stopPropagation()">
+                <h2 class="v-deposit__modal-title">Поздравляем!
+                    Вы выиграли</h2>
+                <p class="v-deposit__modal-value v-deposit__modal-growth v-deposit__modal-growth--up">$ 100
+
+                </p>
+                <a href="" class="v-btn v-btn--primary v-deposit__modal-btn"
+                    onclick="modalHandler.close(event, 'modal1')">Ок</a>
+            </div>
+        </div>
+        <!--#include virtual="../parts/v2/appNavigationBar.html" -->
+    </div>
+</div>
+
+<!--#include virtual="../parts/v2/footer.html" -->

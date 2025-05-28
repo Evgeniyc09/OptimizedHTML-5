@@ -1,0 +1,166 @@
+<!--#set var="title" value="The Game" -->
+<!--#include virtual="/parts/v2/header.html" -->
+
+<div class="app">
+    <header id="v-header">
+        <div class="container">
+            <a href="" class="v-header-back">
+                <img src="../images/dist/arrow-back.svg" alt="">
+            </a>
+            <div class="v-route-name">
+                Криптовалюта
+                <a href="" class="v-route-information">
+                    <img src="../images/dist/icon-information.svg" alt="">
+                </a>
+            </div>
+            <a href="" class="v-profile">
+                <div class="v-profile-wrapper">
+                    <div class="v-profile-indicator"></div>
+                    <p>A</p>
+                </div>
+            </a>
+        </div>
+    </header>
+    <div class="page container v-ob page-with-nav">
+        <div class="page-with-icon">
+            <img class="page-icon" src="../images/dist/crypto-network.png" alt="">
+
+
+            <div class="bybit">
+                <img class="bybit__logo" src="../images/dist/bybit-logo.png"></img>
+
+                <div class="bybit__description">
+                    <b>Новый Уровень <br>
+                        Трейдинга | Инвестиций | Обучения</b>
+                </div>
+                <div class="bybit__description">
+                    Зарегистрируйтесь и получите <br>
+                    5,050 в бонусах и мистери-боксах
+                </div>
+
+                <a href="" class="v-btn v-btn--bybit v-btn--outline">Зарегистрироваться</a>
+                <a href="" class="v-btn v-btn--secondary v-btn--outline">Демо-трейдинг</a>
+            </div>
+
+            <div class="v-ob__list">
+                <div class="v-ob__item">
+                    <div class="v-ob__item-name">
+                        <img src="../images/dist/btc-icon.png" alt="">
+                        <span>BTC</span>
+                    </div>
+                    <div class="v-ob__item-value">
+                        <span>$ 78626,20</span>
+                        <div class="v-features__item-growth v-features__item-growth--down">
+                            ↓ 100,57%
+                        </div>
+                    </div>
+
+                    <a href="" class="v-btn v-btn--primary">Купить</a>
+                </div>
+                <div class="v-ob__item v-ob__item--closed" onclick="modalHandler.open(event, 'modal1')">
+                    <div class="v-ob__item-name">
+                        <img src="../images/dist/btc-icon.png" alt="">
+                        <span>BTC</span>
+                    </div>
+                    <div class="v-ob__item-value">
+                        _ _ _
+                    </div>
+
+                    <a href="" class="v-btn v-btn--secondary">Купить</a>
+
+                    <div href="" class="v-ob__item-question">
+                        <img src="../images/dist/question-icon.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="v-ob__item v-ob__item--closed" onclick="modalHandler.open(event, 'modal1')">
+                    <div class="v-ob__item-name">
+                        <img src="../images/dist/btc-icon.png" alt="">
+                        <span>BTC</span>
+                    </div>
+                    <div class="v-ob__item-value">
+                        _ _ _
+                    </div>
+
+                    <a href="" class="v-btn v-btn--secondary">Купить</a>
+
+                    <div href="" class="v-ob__item-question">
+                        <img src="../images/dist/question-icon.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="v-ob__item v-ob__item--closed" onclick="modalHandler.open(event, 'modal1')">
+                    <div class="v-ob__item-name">
+                        <img src="../images/dist/btc-icon.png" alt="">
+                        <span>BTC</span>
+                    </div>
+                    <div class="v-ob__item-value">
+                        _ _ _
+                    </div>
+
+                    <a href="" class="v-btn v-btn--secondary">Купить</a>
+
+                    <div href="" class="v-ob__item-question">
+                        <img src="../images/dist/question-icon.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="v-ob__item v-ob__item--closed" onclick="modalHandler.open(event, 'modal1')">
+                    <div class="v-ob__item-name">
+                        <img src="../images/dist/btc-icon.png" alt="">
+                        <span>BTC</span>
+                    </div>
+                    <div class="v-ob__item-value">
+                        _ _ _
+                    </div>
+
+                    <a href="" class="v-btn v-btn--secondary">Купить</a>
+
+                    <div href="" class="v-ob__item-question">
+                        <img src="../images/dist/question-icon.svg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="bybit">
+                <img class="bybit__logo" src="../images/dist/bybit-logo.png"></img>
+
+                <div class="bybit__description">
+                    Торгуйте где угодно и когда угодно. <br>
+                    Мгновенно открывайте новые позиции <br>
+                    на сайте и в приложении Bybit.
+                </div>
+
+                <div class="market__buttons">
+                    <a href="" class="market__button">
+                        <img src="../images/dist/appstore.svg" alt="">
+                    </a>
+                    <a href="" class="market__button">
+                        <img src="../images/dist/google-play.png" alt="">
+                    </a>
+                    <a href="" class="market__button">
+                        <img src="../images/dist/app-gallery.png" alt="">
+                    </a>
+                </div>
+
+                <div class="bybit__description">
+                    Скачайте приложение и получите до 5050 USDT <br>
+                    в приветственных наградах!
+                </div>
+            </div>
+        </div>
+
+
+        <div id="modal1" class="v-modal__overlay v-deposit__modal" onclick="modalHandler.close(event, 'modal1')">
+            <div class="v-modal" onclick="event.stopPropagation()">
+                <h2 class="v-deposit__modal-title">Доступно на сильвер уровне</h2>
+                <a href="" class="v-btn v-btn--primary v-deposit__modal-btn"
+                    onclick="modalHandler.close(event, 'modal1')">Купить</a>
+            </div>
+        </div>
+
+        <!--#include virtual="../parts/v2/appNavigationBar.html" -->
+    </div>
+</div>
+
+<!--#include virtual="../parts/v2/footer.html" -->

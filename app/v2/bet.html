@@ -1,0 +1,171 @@
+<!--#set var="title" value="The Game" -->
+<!--#include virtual="/parts/v2/header.html" -->
+
+<div class="app">
+    <header id="v-header">
+        <div class="container">
+            <a href="" class="v-header-back">
+                <img src="../images/dist/arrow-back.svg" alt="">
+            </a>
+            <div class="v-route-name">
+                Ставки
+            </div>
+            <a href="" class="v-profile">
+                <div class="v-profile-wrapper">
+                    <div class="v-profile-indicator"></div>
+                    <p>A</p>
+                </div>
+            </a>
+        </div>
+    </header>
+    <div class="page container v-bet-page page-with-nav">
+        <div class="v-bet__logo">
+            <img src="../images/dist/bet-img.png" alt="">
+        </div>
+        <div class="v-bet__title">
+            БУКМЕКЕРСКАЯ КОНТОРА
+        </div>
+        <div class="v-bet__description">
+            Ставки на футбольные матчи
+        </div>
+
+
+        <div class="v-bet__match">
+            <div class="v-bet__match-team">
+                <div class="v-bet__match-logo">
+                    <img src="../images/dist/arsenal-logo.png" alt="">
+                </div>
+                <div class="v-bet__match-name">Арсенал</div>
+            </div>
+
+            <div class="v-bet__match-date">
+                <p>1 апреля</p>
+                <span>23:45</span>
+            </div>
+
+            <div class="v-bet__match-team">
+                <div class="v-bet__match-logo">
+                    <img src="../images/dist/fulham-logo.png" alt="">
+                </div>
+                <div class="v-bet__match-name">Фулхэм</div>
+            </div>
+        </div>
+
+        <div class="v-bet__features">
+            <div class="v-bet__item">
+                <div class="v-bet__item-label">1</div>
+                <div class="v-bet__item-value">1.42</div>
+            </div>
+            <div class="v-bet__item">
+                <div class="v-bet__item-label">X</div>
+                <div class="v-bet__item-value">4.40</div>
+            </div>
+            <div class="v-bet__item">
+                <div class="v-bet__item-label">2</div>
+                <div class="v-bet__item-value">8.00</div>
+            </div>
+        </div>
+
+        <form class="v-bet__form">
+            <div class="v-bet__field-group">
+                <div class="v-bet__field-wrapper">
+                    <div class="v-bet__field-label">Ставка</div>
+                    <div class="v-bet-select" data-select>
+                        <input type="hidden" name="select-value" data-hidden-input>
+                        <div class="v-bet-select__trigger" data-trigger>
+                            1
+                        </div>
+                        <div class="v-bet-select__body" data-body>
+                            <ul class="v-bet-select__options">
+                                <li class="v-bet-select__option" data-value="option1">
+                                    1
+                                </li>
+                                <li class="v-bet-select__option" data-value="option2">
+                                    x
+                                </li>
+                                <li class="v-bet-select__option" data-value="option3">
+                                    2
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="v-bet__field-wrapper">
+                    <div class="v-bet__field-label">Сумма</div>
+                    <input type="number" class="v-bet__field" id="betCount" placeholder="$ 0">
+                </div>
+            </div>
+            <div class="v-bet__btn-wrapper">
+                <button type="submit" class="v-btn v-btn--orange" onclick="modalHandler.open(event, 'modal1')">Сделать
+                    ставку</button>
+            </div>
+        </form>
+
+        <p class="v-bet__hint">Максимальный размер ставки — $ 50
+            Одна игра — одна ставка <br> <br>
+
+            Ваш выигрыш автоматически зачисляется на игровой счет в виртуальной валюте</p>
+
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item" id="rules">
+                <h2 class="accordion-header" id="headingTwo1">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo1" aria-expanded="false" aria-controls="collapseTwo1">
+                        Какая ставка используется в игре ⚽
+                    </button>
+                </h2>
+                <div id="collapseTwo1" class="accordion-collapse collapse" aria-labelledby="headingTwo1"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p>📌 1X2 — основная ставка на исход м﻿атча</p>
+
+                        <p>Это самая базовая и популярная ставка в футболе. Она означает, на какой результат вы ставите
+                            в основное время (обычно 90
+                            минут + добавленное арбитром время).</p>
+
+                        <p>
+                            1 — победа первой команды (обычно хозяева поля) <br>
+                            X — ничья <br>
+                            2 — победа второй команды (обычно гости) <br>
+                        </p>
+
+                        <p>
+                            📘 Пример:  <br> <br>
+                            Матч: Арсенал vs Фулхэм.  <br>
+                            Вы видите в линии: <br>
+                            1 – 1.70 <br>
+                            X – 3.80 <br>
+                            2 – 5.00 <br>
+                            Это значит: <br>
+                            Если вы ставите на 1, и Арсенал выигрывает — ставка заходит, выплата по коэффициенту 1.70.
+                            <br>
+                            Если ничья — выигрывает ставка на X. <br>
+                            Если побеждает Фулхэм — выигрывает ставка на 2. <br>
+                        </p>
+
+                        <p>🔎 Важно:</p>
+
+                        <p>Эта ставка не учитывает дополнительное время или пенальти (если это кубковый матч). Только
+                            результат основного времени</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="modal1" class="v-modal__overlay v-deposit__modal" onclick="modalHandler.close(event, 'modal1')">
+            <div class="v-modal" onclick="event.stopPropagation()">
+                <h2 class="v-deposit__modal-title">Ставка сделана</h2>
+                <ul class="text-start">
+                    <li>$ 50 на 1</li>
+                    <li>возможен выигрыш  $ 170</li>
+                </ul>
+                <a href="" class="v-btn v-btn--primary v-deposit__modal-btn"
+                    onclick="modalHandler.close(event, 'modal1')">Ок</a>
+            </div>
+        </div>
+        <!--#include virtual="../parts/v2/appNavigationBar.html" -->
+    </div>
+</div>
+
+<!--#include virtual="../parts/v2/footer.html" -->

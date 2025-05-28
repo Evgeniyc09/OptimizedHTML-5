@@ -1,0 +1,60 @@
+// GENERAL PROJECT STYLES
+.btn-primary {
+  background-color: $accent;
+  border-color: $accent;
+
+  &:hover {
+    background-color: $accent-hover;
+    border-color: $accent-hover;
+  }
+}
+
+.form-control {
+  border-radius: 50px;
+
+  &:focus {
+    border-color: $accent-hover;
+    box-shadow: unset;
+  }
+}
+
+.text-secondary {
+  color: $textsecondary;
+}
+
+.iti {
+  width: 100%;
+}
+
+.iti__search-input {
+  height: 45px;
+  text-indent: 15px;
+
+  &:focus-visible {
+    outline: none;
+    border: none;
+  }
+}
+
+.icon-whatsapp {
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  margin: 0 8px 0 0;
+  background: url("../images/dist/icon-whatsapp.svg") no-repeat center/cover;
+}
+
+.chat-app-link {
+  text-align: center;
+  margin: 0 0 15px;
+  .btn-link {
+    background: #daf5ff;
+    font-size: 16px;
+    text-decoration: none;
+  }
+}
+.feedback-app-link {
+  text-align: center;
+  margin: 15px 0 0;
+}

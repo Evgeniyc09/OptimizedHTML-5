@@ -1,0 +1,14 @@
+.app-investment-logo {
+  margin: 45px 0 0;
+  text-align: center;
+
+  img {
+    width: 80px;
+  }
+
+  &--freedom-broker {
+    img {
+      width: 150px;
+    }
+  }
+}

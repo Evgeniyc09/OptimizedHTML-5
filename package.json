@@ -5,9 +5,13 @@
 	"main": "index.js",
 	"author": "WebDesign Master",
 	"type": "module",
-	"browserslist": [ "last 10 versions" ],
+	"browserslist": [
+		"last 10 versions"
+	],
 	"license": "ISC",
-	"scripts": { "start": "gulp" },
+	"scripts": {
+		"start": "gulp"
+	},
 	"devDependencies": {
 		"@babel/core": "^7.23.2",
 		"@babel/preset-env": "^7.23.2",
@@ -37,5 +41,8 @@
 		"terser-webpack-plugin": "^5.3.9",
 		"webpack": "^5.89.0",
 		"webpack-stream": "^7.0.0"
+	},
+	"dependencies": {
+		"intl-tel-input": "^25.2.1"
 	}
 }

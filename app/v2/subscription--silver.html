@@ -1,0 +1,129 @@
+<!--#set var="title" value="The Game" -->
+<!--#include virtual="/parts/v2/header.html" -->
+
+<div class="app">
+    <header id="v-header">
+        <div class="container">
+            <a href="" class="v-header-back">
+                <img src="../images/dist/arrow-back.svg" alt="">
+            </a>
+            <div class="v-route-name">
+                Учебный центр
+            </div>
+            <a href="" class="v-profile">
+                <div class="v-profile-wrapper v-profile-wrapper--bronze">
+                    <div class="v-profile-indicator"></div>
+                    <p class="v-profile__label">A</p>
+                </div>
+            </a>
+        </div>
+    </header>
+    <div class="page container page-with-nav v-subscription-page">
+        <div class="v-subscription__lvl v-subscription__lvl--silver">
+            <div class="v-subscription__lvl-title">Новые возможности! 🎉</div>
+            <div class="v-subscription__lvl-description">Откройте для себя серебряный уровень</div>
+        </div>
+        <div class="v-subscription__card-list">
+            <div class="v-subscription__card v-subscription__card--gray-bg">
+                <div class="v-subscription__card-icon">
+                    <img src="../images/dist/tse+nasdaq.png" alt="">
+                </div>
+                <h3 class="v-subscription__card-label">+ фондовая биржа</h3>
+                <p class="v-subscription__card-description">Доступны акции 30
+                    компаний на биржах NASDAQ и TSE</p>
+            </div>
+            <div class="v-subscription__card v-subscription__card--gray-bg">
+                <div class="v-subscription__card-icon">
+                    <img src="../images/dist/cryptocoins.png" alt="">
+                </div>
+                <h3 class="v-subscription__card-label">+6 криптовалют</h3>
+                <p class="v-subscription__card-description">Ethereum, Solana, Toncoin и другие виртуальные валюты</p>
+            </div>
+            <div class="v-subscription__card v-subscription__card--gray-bg">
+                <div class="v-subscription__card-icon">
+                    <img src="../images/dist/estate-v2.png" alt="">
+                </div>
+                <h3 class="v-subscription__card-label">Недвижимость</h3>
+                <p class="v-subscription__card-description">Доступна покупка
+                    1-комнатной квартиры и сдача её в аренду</p>
+            </div>
+
+            <div class="v-subscription__card v-subscription__card--container">
+                <div class="v-subscription__card v-subscription__card--small  v-subscription__card--bg-blue">
+                    <h3 class="v-subscription__card-label">Новые кейсы
+                        😎</h3>
+                    <p class="v-subscription__card-description">Больше интересных задач. Решайте кейсы каждый день.</p>
+                </div>
+
+                <div class="v-subscription__card v-subscription__card--small  v-subscription__card--bg-yellow">
+                    <h3 class="v-subscription__card-label">Выигрыши +1000
+                        🎉</h3>
+                    <p class="v-subscription__card-description">Ежедневные призы за первые места рейтинга — 2500 тенге
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <ul class="v-subscription__feature-list">
+            <li class="v-subscription__feature">Ещё один драгоценный металл — серебро</li>
+            <li class="v-subscription__feature">Ещё один депозитный счёт — в тенге</li>
+            <li class="v-subscription__feature">Ещё облигации — в тенге</li>
+            <li class="v-subscription__feature">Доля к покупке в бизнесе — до 50%</li>
+        </ul>
+
+
+        <form action="" class="v-subscription__form">
+            <div class="v-subscription__radio-group">
+                <div class="v-subscription__radio">
+                    <input type="radio" id="price1" name="price" value="990" checked />
+                    <label for="price1" class="v-subscription__radio-label">
+                        <div class="v-subscription__radio-title">3 дня</div>
+                        <div class="v-subscription__radio-description">Дёшево и <br> сердито</div>
+                        <div class="v-subscription__radio-value">₸ 990</div>
+                    </label>
+
+                </div>
+
+                <div class="v-subscription__radio">
+                    <input type="radio" id="price2" name="price" value="1990" />
+                    <label for="price2" class="v-subscription__radio-label">
+                        <div class="v-subscription__radio-title">7 дней</div>
+                        <div class="v-subscription__radio-description">🔥 Часто <br> выбирают</div>
+                        <div class="v-subscription__radio-value">₸ 1990</div>
+                    </label>
+
+                </div>
+
+                <div class="v-subscription__radio">
+                    <input type="radio" id="price3" name="price" value="3990" />
+                    <label for="price3" class="v-subscription__radio-label">
+                        <div class="v-subscription__radio-title">15 дней</div>
+                        <div class="v-subscription__radio-description">Выгодное предложение 🎉</div>
+                        <div class="v-subscription__radio-value">₸ 3990</div>
+                    </label>
+
+                </div>
+            </div>
+
+            <button type="submit" class="v-btn v-btn-subscription" onclick="modalHandler.open(event, 'modal1')">Оформить
+                подписку</button>
+            <div class="v-subscription__policy">
+                Нажимая на кнопку, вы соглашаетесь
+                с <br> <a href="">условиями проведения платежей</a> <br>
+                и гарантиями безопасности от Robokassa
+            </div>
+        </form>
+        <div id="modal1" class="v-modal__overlay v-deposit__modal" onclick="modalHandler.close(event, 'modal1')">
+            <div class="v-modal" onclick="event.stopPropagation()">
+                <h2 class="v-deposit__modal-title">Поздравляем! 🥳</h2>
+                <p class="v-modal__subscription-description">Подписка на 7 дней <br> успешно приобретена.</p>
+                <p class="v-modal__subscription-description">Играйте на серебряном <br> уровне до 28 апреля.</p>
+                <a href="" class="v-btn v-btn--primary v-deposit__modal-btn"
+                    onclick="modalHandler.close(event, 'modal1')">Ок</a>
+            </div>
+        </div>
+        <!--#include virtual="../parts/v2/appNavigationBar.html" -->
+    </div>
+</div>
+
+<!--#include virtual="../parts/v2/footer.html" -->

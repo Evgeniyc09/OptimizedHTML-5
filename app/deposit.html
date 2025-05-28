@@ -1,0 +1,48 @@
+<!--#set var="title" value="The Game" -->
+<!--#include virtual="/parts/header.html" -->
+
+<div class="app">
+	<div class="page container page-with-nav page-with-action-button page-deposit">
+		<!--#set var="pageTitle" value="Депозит" -->
+		<!--#set var="pageDescription" value="Вы можете положить монеты на депозит под 14% годовы. Внести или снять средства можно в любое время." -->
+		<!--#include virtual="/parts/appHeader.html" -->
+		<!--#include virtual="/parts/pageHeader.html" -->
+
+		<div class="page-deposit-action-wrapper">
+			<div class="app-deposit-image">
+				<img src="./images/dist/deposit.svg" alt="">
+			</div>
+			<div class="app-deposit-balance">
+				<span>На вашем депозите</span>
+				<span class="value">100 000</span>
+			</div>
+			<div class="app-deposit-changes green">+10 000</div>
+			<div class="app-deposit-changes red">-10 000</div>
+			<div class="app-deposit-info">
+				<div class="app-deposit-info-item">
+					<span>За 19 декабря</span>
+					<p class="green">+ 500 000</p>
+
+				</div>
+				<div class="app-deposit-info-item">
+					<span>Всего</span>
+					<p class="green">+1 500 000</p>
+				</div>
+			</div>
+		</div>
+		<div id="app-action-button-bar">
+			<div class="container">
+				<a href="deposit-action.html" class="btn btn-success btn-lg">
+					Внести
+				</a>
+				<a href="deposit-action.html" class="btn btn-danger btn-lg">
+					Снять
+				</a>
+			</div>
+		</div>
+
+
+		<!--#include virtual="/parts/appNavigationBar.html" -->
+	</div>
+</div>
+<!--#include virtual="/parts/footer.html" -->

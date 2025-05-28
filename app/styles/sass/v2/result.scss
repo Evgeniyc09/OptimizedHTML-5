@@ -1,0 +1,36 @@
+.v-result {
+  &__cover {
+    text-align: center;
+    margin: 40px 0 24px;
+    img {
+      height: 128px;
+    }
+  }
+
+  &__title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: #000000;
+
+    margin: 24px 0 12px;
+  }
+
+  &__description {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  &__btn-wrapper {
+    margin: 24px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .v-btn {
+      margin: 0 8px;
+    }
+  }
+}

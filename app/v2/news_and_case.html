@@ -1,0 +1,179 @@
+<!--#set var="title" value="The Game" -->
+<!--#include virtual="/parts/v2/header.html" -->
+
+<div class="app">
+    <div class="page container v-intro__page page-with-nav">
+        <header id="v-header">
+            <div class="container">
+                <a href="" class="v-header-back">
+                    <img src="../images/dist/arrow-back.svg" alt="">
+                </a>
+                <div class="v-route-name">
+                    Лента
+                </div>
+                <a href="" class="v-profile">
+                    <div class="v-profile-wrapper">
+                        <div class="v-profile-indicator"></div>
+                        <p>A</p>
+                    </div>
+                </a>
+            </div>
+        </header>
+
+        <div class="v-nc">
+            <div class="v-tabs-container">
+                <div class="v-tabs">
+                    <button class="v-tab-button active" data-tab="tab1">Новости</button>
+                    <button class="v-tab-button" data-tab="tab2">Кейсы <div class="badge-new-records">25</div></button>
+                </div>
+                <div class="tab-content">
+                    <div id="tab1" class="v-tab-pane active">
+                        <p class="v-nc__annotation">Новости публикуются ежедневно. Они основаны на реальных материалах,
+                            однако не
+                            являются исчерпывающими.
+                            Принимайте
+                            решения об инвестициях в активы, опираясь и на другие, заслуживающие доверия, источники.</p>
+
+                        <div class="v-nc__item">
+                            <div class="v-nc-cover">
+                                <img src="../images/dist/news-example2.jpg" alt="News 1">
+                            </div>
+                            <div class="v-nc-stat">
+                                <div class="v-nc-investment">
+                                    <div class="v-nc-logo">
+                                        <img src="../images/dist/stocks/tesla--big.svg" alt="">
+                                    </div>
+                                    <div class="v-nc-info">
+                                        <p class="v-nc-name">Tesla Inc.</p>
+                                        <p class="v-nc-sysname">TSLA</p>
+                                    </div>
+                                </div>
+                                <div class="v-nc-investment-price">
+                                    <p class="price">$528</p>
+                                    <p class="dynamic-price increase">5,58%</p>
+                                </div>
+                            </div>
+                            <div class="v-nc-title">
+                                <h3>Золото доражает</h3>
+                            </div>
+                            <div class="v-nc-date">
+                                <p>22 июня 2023, 12:30</p>
+                            </div>
+                            <div class="v-nc-annotation">
+                                <p><b>Более 1000 акций Tesla Inc (TSLA) взлетели на 25% в неделю. Вы можете получить
+                                        дополнительные
+                                        инвестиции.</b></p>
+                            </div>
+                            <div class="v-nc-content">
+                                <p>Акции Tesla и других автопроизводителей упали после того, как стало известно о планах
+                                    избранного
+                                    президента США Дональда
+                                    Трампа отменить налоговые льготы на электромобили, пишет Bloomberg со ссылкой на
+                                    торговые
+                                    данные.</p>
+                            </div>
+
+                            <div class="v-nc-buttons">
+                                <a href="" class="v-btn v-btn--primary">Купить или продать</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab2" class="v-tab-pane">
+                        <div class="v-nc__annotation">
+                            <p>Новости публикуются ежедневно. Они основаны на реальных материалах,
+                                однако не
+                                являются исчерпывающими.
+                                Принимайте
+                                решения об инвестициях в активы, опираясь и на другие, заслуживающие доверия, источники.
+                            </p>
+                            <div class="v-nc-buttons">
+                                <a href="" class="v-btn v-btn--primary v-btn--outline">Список выигравших</a>
+                            </div>
+                        </div>
+
+
+
+                        <div class="v-nc__item v-nc__item--close" onclick="modalHandler.open(event, 'modal1')">
+                            <div href="" class="v-nc__button-question">
+                                <img src="../images/dist/question-icon.svg" alt="">
+                            </div>
+                            <div class="v-nc-cover">
+                                <img src="../images/dist/news-example2.jpg" alt="News 1">
+                            </div>
+                            <div class="v-nc-title">
+                                <h3>Золото доражает</h3>
+                            </div>
+                            <div class="v-nc-date">
+                                <p>22 июня 2023, 12:30</p>
+                            </div>
+                            <div class="v-nc-content">
+                                <p>Акции Tesla и других автопроизводителей упали после того, как стало известно о планах
+                                    избранного
+                                    президента США Дональда
+                                    Трампа отменить налоговые льготы на электромобили, пишет Bloomberg со ссылкой на
+                                    торговые
+                                    данные.</p>
+                            </div>
+                        </div>
+                        <div class="v-nc__item">
+                            <div class="v-nc-cover">
+                                <img src="../images/dist/news-example2.jpg" alt="News 1">
+                            </div>
+                            <div class="v-nc-stat">
+                                <div class="v-nc-investment">
+                                    <div class="v-nc-logo">
+                                        <img src="../images/dist/stocks/tesla--big.svg" alt="">
+                                    </div>
+                                    <div class="v-nc-info">
+                                        <p class="v-nc-name">Tesla Inc.</p>
+                                        <p class="v-nc-sysname">TSLA</p>
+                                    </div>
+                                </div>
+                                <div class="v-nc-investment-price">
+                                    <p class="price">$528</p>
+                                    <p class="dynamic-price increase">5,58%</p>
+                                </div>
+                            </div>
+                            <div class="v-nc-title">
+                                <h3>Золото доражает</h3>
+                            </div>
+                            <div class="v-nc-date">
+                                <p>22 июня 2023, 12:30</p>
+                            </div>
+                            <div class="v-nc-annotation">
+                                <p><b>Более 1000 акций Tesla Inc (TSLA) взлетели на 25% в неделю. Вы можете получить
+                                        дополнительные
+                                        инвестиции.</b></p>
+                            </div>
+                            <div class="v-nc-content">
+                                <p>Акции Tesla и других автопроизводителей упали после того, как стало известно о планах
+                                    избранного
+                                    президента США Дональда
+                                    Трампа отменить налоговые льготы на электромобили, пишет Bloomberg со ссылкой на
+                                    торговые
+                                    данные.</p>
+                            </div>
+
+                            <div class="v-nc-buttons">
+                                <a href="" class="v-btn v-btn--primary">Внести</a>
+                                <a href="" class="v-btn v-btn--primary v-btn--outline">Отказаться</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div id="modal1" class="v-modal__overlay v-deposit__modal" onclick="modalHandler.close(event, 'modal1')">
+            <div class="v-modal" onclick="event.stopPropagation()">
+                <h2 class="v-deposit__modal-title">Доступно на сильвер</h2>
+                <a href="" class="v-btn v-btn--primary v-deposit__modal-btn"
+                    onclick="modalHandler.close(event, 'modal1')">Купить</a>
+            </div>
+        </div>
+
+        <!--#include virtual="../parts/v2/appNavigationBar.html" -->
+    </div>
+</div>
+
+<!--#include virtual="../parts/v2/footer.html" -->

@@ -1,0 +1,31 @@
+<section id="app-investment-chart" class="app-investment-chart">
+	<div class="container">
+		<div id="chart_div" style="height: 450px;"></div>
+	</div>
+</section>
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+	google.charts.load('current', { 'packages': ['corechart'] });
+	google.charts.setOnLoadCallback(drawChart);
+
+	function drawChart() {
+		var data = google.visualization.arrayToDataTable([
+			['Год', 'Цена'],
+			['2013', 250],
+			['2014', 700],
+			['2015', 500],
+			['2016', 800]
+		]);
+
+		var options = {
+			hAxis: { title: 'Год', titleTextStyle: { color: '#333' } },
+			vAxis: { minValue: 0 },
+			colors: ['#49cc6a'], // Sets the line color
+			areaOpacity: 0.2,
+		};
+
+		var chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
+		chart.draw(data, options);
+	}
+</script>
